@@ -7,7 +7,7 @@ However, some specific problems that cannot be solved with the built-in tools in
 
 ## Documentation
 
-[ALT-Text-4-InDesign Documentation](./Documenation)
+[ALT-Text-4-InDesign Documentation](./Documentation)
 
 ## Stay up to date
 
