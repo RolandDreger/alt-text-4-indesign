@@ -12,8 +12,8 @@ However, some specific problems that cannot be solved with the built-in tools in
 
 ## Privacy Policy
 
-- [ALT-Text-4-InDesign Privacy Policy (English)](./Documentation/alt-text-4-indesign_privacy_policy.en.md)
-- [ALT-Text-4-InDesign Datenschutz (Deutsch)](./Documentation/alt-text-4-indesign_privacy_policy.de.md)
+- [ALT-Text-4-InDesign Privacy Policy (English)](./Privacy_Policy/alt-text-4-indesign_privacy_policy.en.md)
+- [ALT-Text-4-InDesign Datenschutz (Deutsch)](./Privacy_Policy/alt-text-4-indesign_privacy_policy.de.md)
 
 ## Support
 
