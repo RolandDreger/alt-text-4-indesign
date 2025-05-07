@@ -7,8 +7,17 @@ However, some specific problems that cannot be solved with the built-in tools in
 
 ## Documentation
 
-- [ALT-Text-4-InDesign Documentation (English)](./Documentation/alt-text-4-indesign_doku.en.md)
-- [ALT-Text-4-InDesign Dokumentation (Deutsch)](./Documentation/alt-text-4-indesign_doku.de.md)
+- [ALT-Text-4-InDesign Documentation (English)](./Documentation/alt-text-4-indesign_documentation.en.md)
+- [ALT-Text-4-InDesign Dokumentation (Deutsch)](./Documentation/alt-text-4-indesign_documentation.de.md)
+
+## Privacy Policy
+
+- [ALT-Text-4-InDesign Privacy Policy (English)](./Documentation/alt-text-4-indesign_privacy_policy.en.md)
+- [ALT-Text-4-InDesign Datenschutz (Deutsch)](./Documentation/alt-text-4-indesign_privacy_policy.de.md)
+
+## Support
+
+roland.dreger@ik.me
 
 ## Stay up to date
 
