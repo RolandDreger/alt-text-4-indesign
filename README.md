@@ -7,9 +7,8 @@ However, some specific problems that cannot be solved with the built-in tools in
 
 ## Documentation
 
-[ALT-Text-4-InDesign Documentation (English)](./Documentation/alt-text-4-indesign_doku.en.md)
-&nbsp;
-[ALT-Text-4-InDesign DoKumentation (Deutsch)](./Documentation/alt-text-4-indesign_doku.de.md)
+- [ALT-Text-4-InDesign Documentation (English)](./Documentation/alt-text-4-indesign_doku.en.md)
+- [ALT-Text-4-InDesign DoKumentation (Deutsch)](./Documentation/alt-text-4-indesign_doku.de.md)
 
 ## Stay up to date
 
