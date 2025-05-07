@@ -1,5 +1,5 @@
 # ALT-Text-4-InDesign
-**Adobe InDesign plugins that assists users in creating accessible documents.**
+**Adobe InDesign plugins that assists users in creating alternate text for accessible documents.**
 
 Accessibility-4-InDesign currently contains two (independent) plugins: a [report panel](https://github.com/RolandDreger/accessibility-4-indesign) (with integrated question area) and this alt text panel. A plugin for contrast checking and preflights are currently being planned. The panels are intended to provide simple assistance in identifying accessibility issues in Adobe InDesign documents. 
 
