@@ -2,6 +2,16 @@
 
 The *Alt-text-4-InDesign* plug-in is designed to help you create alternative texts for images and graphics in *Adobe InDesign*.
 
+## Installation
+
+Installation is done via the Adobe Creative Cloud application (Stock and Marketplace) or [Adobe Exchange](https://exchange.adobe.com/apps/cc/1c6b7a83/alt-text-for-indesign). Updates can also be installed via this application. 
+
+## License
+
+The license purchased via Adobe Exchange (Stock and Marketplace) is a single user license. Requests to the OpenAI Large Language Model (LLM) are included. (Fair Use Policy) Inquiries regarding an Enterprise license to [roland.dreger@ik.me](mailto:roland.dreger@ik.me).
+
+The license key is entered in the `Settings` tab of the panel.
+
 ## Alternate Text
 
 Alternative text, also known as ALT text, is an essential component of accessible documents. It is used to describe non-textual content such as images or graphics and can be read and reproduced by assistive technologies such as screen readers.
@@ -63,4 +73,8 @@ The `All linked images` action automatically assigns an alternative text to all 
 
 A Large Language Model (LLM) from OpenAI is used to create the alternative texts. The images are processed via the OpenAI API interface. The specifications for the generation instruction (prompt) and the target language are taken from the settings in the panel. If the prompt input field and the drop-down menu for the language selection are not visible, activate the checkbox `Instruction for ALT text` in the footer of the panel.
 
-In the `Settings` tab, you can make **additional settings for automated Alt-text generation** in the `Automated actions` section. Here you can specify, for example, whether existing alternative text should be overwritten or whether existing text should be used as a context during generation. 
+In the `Settings` tab, you can make **additional settings for automated Alt-text generation** in the `Automated actions` section. Here you can specify, for example, whether existing alternative text should be overwritten or whether existing text should be used as a context during generation.
+
+## Questions and support
+
+[roland.dreger@ik.me](mailto:roland.dreger@ik.me)

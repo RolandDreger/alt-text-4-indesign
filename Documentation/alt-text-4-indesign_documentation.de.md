@@ -2,6 +2,16 @@
 
 Das Plug-in *ALT-Text-4-InDesign* soll dir dabei helfen, alternative Texte für Bilder und Grafiken in *Adobe InDesign* zu erstellen.
 
+## Installation
+
+Die Installation erfolgt über die Adobe Creativ Cloud Anwendung (Stock und Marktplatz) oder [Adobe Exchange](https://exchange.adobe.com/apps/cc/1c6b7a83/alt-text-for-indesign). Aktualisierungen können ebenfalls über diese Anwendung eingespielt werden. 
+
+## Lizenz
+
+Bei der über Adobe Exchange (Stock und Marktplatz) erworbenen Lizenz handelt es sich um eine Einzelplatzlizenz. Die Abfragen an das Large Language Model (LLM) von OpenAI sind dabei inkludiert. (Fair Use Policy) Anfragen bezüglich einer Enterprise-Lizenz an [roland.dreger@ik.me](mailto:roland.dreger@ik.me).
+
+Der Lizenzschlüssel wird im Reiter `Einstellungen` des Panels eingegeben.
+
 ## Alternativer Text
 
 Alternativer Text, auch ALT-Text genannt, ist ein wesentlicher Bestandteil von barrierefreien Dokumenten. Er dient dazu, nicht-textuelle Inhalte wie Bilder oder Grafiken zu beschreiben und kann von assistiven Technologien, wie Screenreadern, ausgelesen und wiedergegeben werden.
@@ -63,4 +73,8 @@ Zudem wird das so markierte Objekt als dekoratives Element gekennzeichnet. Im ex
 
 Für die Erstellung der alternativen Texte wird ein Large Language Model (LLM) von OpenAI verwendet. Die Bilder werden dazu über die API-Schnittstelle von OpenAI verarbeitet. Die Vorgaben für die Erstellungsanweisung (Prompt) und die Zielsprache werden aus den Eingaben im Panel übernommen. Ist das Prompt-Eingabefeld und das Dropdown-Menü für die Sprachauswahl nicht sichtbar, aktiviere die Checkbox `Anweisung für ALT-Text` im Fußbereich des Panels.
 
-Im Reiter `Settings` können im Abschnitt `Automatisierte Aktionen` **zusätzliche Einstellungen für die automatisierte ALT-Text-Erstellung** getroffen werden. Hier kannst du etwa festlegen, ob vorhandener alternativer Text überschrieben werden oder vorhandener Text bei der Erstellung als Kontext dienen soll. 
+Im Reiter `Settings` können im Abschnitt `Automatisierte Aktionen` **zusätzliche Einstellungen für die automatisierte ALT-Text-Erstellung** getroffen werden. Hier kannst du etwa festlegen, ob vorhandener alternativer Text überschrieben werden oder vorhandener Text bei der Erstellung als Kontext dienen soll.
+
+## Fragen und Support
+
+[roland.dreger@ik.me](mailto:roland.dreger@ik.me)
