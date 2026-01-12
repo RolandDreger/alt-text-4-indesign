@@ -26,11 +26,36 @@ Ist kein alternativer Text hinterlegt, kann ein solcher über das Eingabefeld im
 
 Ein vorhandener Text im ALT-Text-Feld (oberstes Eingabefeld im Plugin-Panel) gibt den Kontext für die Erstellung des (neuen) ALT-Textes vor. Das ist beispielsweise dann hilfreich, wenn eine bestimmte Region für eine Landschaftsaufnahme oder der Namen einer bekannten Person auf einer Aufnahme für die Beschreibung des Inhaltes miteinbezogen werden soll.
 
+### Bild-Navigation
+
+Die Pfeil-Schaltflächen unter dem Eingabefeld für den alternativen Text dienen zur Navigation innerhalb des aktiven Dokuments:
+
+`«`   Erstes Bild im Dokument
+`‹`   Vorheriges Bild
+`›`   Nächstes Bild
+`»`   Letztes Bild im Dokument
+
+### Objekt-Indikator
+
+Zwischen den Schaltflächen der Bild-Navigation befindet sich ein Objekt-Indikator. Dieser Indikator zeigt an, ob es sich bei der aktuellen Auswahl um ein Bild, eine Gruppe oder einen mathematischen Ausdruck (MathML) handelt. 
+
+Warum ist diese Unterscheidung wichtig? Je nachdem, um welcher Objekttyp es sich handelt, können PDF- und ePub-Export zu unterschiedlichen Ergebnissen bei der ALT-Text-Zuweisung führen.
+
+Etwa wird bei einer Gruppe mit Bildrahmen beim PDF-Export der alternative Text dieser Gruppe übernommen und nicht der der einzelnen Bilder. Beim ePub-Export ist es genau umgekehrt. Besitzen sowohl die Gruppe also auch die gruppierten Bilder alternative Texte, kommt nur der ALT-Text der einzelnen Bilder und nicht der der Gruppe im ePub-Dokument an. Und auch beim Export von mathematischen Ausdrücken gibt es Unterschiede.
+
 ### Prompt
 
 Für die automatisierte Erstellung des alternativen Textes ist eine Anweisung (Prompt) für das LLM vorgeben. Diesen Prompt-Vorschlag kannst du anpassen oder ganz neu eingeben. Aktiviere dazu die Checkbox `Anweisung für ALT-Text` im Fußbereich des Panels. Damit wird ein zusätzliches Eingabefeld eingeblendet.
 
 **Hinweis:** Die Eingabe wirkt sich auch auf die automatisierte Erstellung der alternativen Texte aus für alle verlinkten Bilder.
+
+### Auswahl
+
+Über ein Menü können vorinstallierte (in eckigen Klammern) und eigene Prompts ausgewählt werden. 
+
+Um einen eigenen Prompt zu speichern, gib deinen Text im Prompt-Eingabefeld ein. Klick auf das `Speichern`-Icon rechts über dem Eingabefeld. Wähle einen individuellen Namen dafür aus. Deine Prompts stehen dir dann auch nach dem Neustart von InDesdign für die ALT-Text-Erstellung zur Verfügung.
+
+**Hinweis**: Bitte bewahre ein Backup deiner eigenen Prompts auf, damit du sie gegebenenfalls wiederherstellen kannst. Die dauerhafte Speicherung im Plugin kann nicht unter allen Umständen gewährleistet werden, z.B. bei einer Neuinstallation von InDesign oder des Plugins. 
 
 ### Sprache
 
@@ -66,8 +91,23 @@ Immer sichtbar ist die Option `Schmuckelement (kein PDF-Tag)`. Wird diese Checkb
 
 Zudem wird das so markierte Objekt als dekoratives Element gekennzeichnet. Im exportierten ePub- oder HTML-Dokument wird diesem Element ein leeres alt-Attribut zugewiesen (also alt="") und dadurch von assistiven Technologien (z.B. Screenreadern) ignoriert.   
 
-## Automatisierte Aktionen
-### Alle verknüpften Bilder
+## Einstellungen
+### Lizenzschlüssel
+
+Im Reiter `Einstellungen` kann der Lizenzschlüssel eingegeben werden, den du beim Kauf des Plug-ins erhalten hast.
+
+### ALT-Text Erstellung
+#### KI-Anbieter
+
+Für die Erstellung der alternativen Texte kann zwischen zwei KI-Anbietern gewählt werden: 
+
+- **OpenAI** ist ein US-amerikanisches Softwareunternehmen mit Sitz in San Francisco.
+- **Mistral AI** ist ein französisches Softwareunternehmen mit Sitz in Paris.
+
+Die getroffene Einstellung bleibt auch nach dem Neu-Start von InDesign erhalten.
+
+### Automatisierte Aktionen
+#### Alle verknüpften Bilder
 
 Über die Aktion `Alle verknüpften Bilder` wird allen Objekten mit Verknüpfungen automatisiert ein alternativer Text zugewiesen. Verarbeitet wird dabei das aktive InDesign-Dokument. Verknüpfungen, deren InDesign-Objekt als dekoratives Bild oder außertextliches Element gekennzeichnet sind, werden dabei übersprungen.
 

@@ -26,11 +26,35 @@ A suggestion for an alternate text can be created using the `Generate` button. T
 
 An existing text in the ALT text field (top input field in the plugin panel) provides the context for the generation of the (new) ALT text. This is helpful, for example, if a specific region for a landscape photo or the name of a celebrity in a photo is to be included in the description of the content.
 
+### Image Navigation
+
+The arrow buttons below the alternative text input field are used to navigate within the active document: 
+`«`   First image in document
+`‹`   Previous image
+`›`   Next image
+`»`   Last image in document
+
+### Object indicator
+
+Between the image navigation buttons you will find an object indicator. This indicator shows whether the current selection is an image, a group, or a mathematical expression (MathML). 
+
+Why is this distinction important? Depending on the object type, PDF and ePub export can lead to different results when assigning ALT text.
+
+For example, when exporting a group of image frames to PDF, the alternative text for that group is used rather than the alternative text for the individual images. When exporting to ePub, the opposite is true. If both the group and the grouped images have alternative texts, only the ALT text of the individual images and not that of the group is included in the ePub document. There are also differences when exporting mathematical expressions.
+
 ### Prompt
 
 An instruction (prompt) for the LLM is predefined for the automated generation of the alternative text. You can adapt this prompt suggestion or enter it from scratch. To do this, activate the checkbox `Alt-text instructions` in the footer of the panel. This will display an additional input field.
 
 **Note:** The input also affects the automatic generation of alternative texts for all linked images.
+
+### Selection
+
+Using the menu above the prompt input field, you can select pre-installed prompts (in square brackets) and your own prompts. 
+
+To save your own prompt, enter your text in the prompt input field. Click on the `Save` icon to the right above the input field. Choose an individual name for it. Your prompts will then be available for ALT text generation even after restarting InDesign. 
+
+**Note**: Please keep a backup of your own prompts so that you can restore them if necessary. Permanent storage in the plugin cannot be guaranteed under all circumstances, e.g., if InDesign or the plugin is reinstalled.
 
 ### Language
 
@@ -65,6 +89,21 @@ The source for the actual text can be specified above the input field. To do thi
 The option `Decorative element (no PDF tag)` is always visible. If this checkbox is activated, the selected object is marked as a decorative element (non-text element) in the InDesign document. This object therefore does not appear in the tag structure in the exported PDF file.
 
 The object marked in this way is also marked as a decorative element for ePub or HTML. In the exported ePub or HTML document, this element is assigned an empty alt attribute (i.e. alt=“”) and is therefore ignored by assistive technologies (e.g. screen readers).
+
+## Settings
+### License Key
+
+In the `Settings` tab, you can enter the license key that you got when you purchased the plug-in.
+
+### ALT text creation
+#### AI providers
+
+You can choose between two AI providers for the generation of alternative texts:
+
+- **OpenAI** is a US software company based in San Francisco.
+- **Mistral AI** is a French software company based in Paris.
+
+The setting you choose will remain in place even after restarting InDesign.
 
 ## Automated Actions
 ### All linked Images
