@@ -18,15 +18,15 @@ The recording of the number of accesses and the last access date serves exclusiv
 
 5. Transfer to third-party providers
 
-The plugin uses a Large Language Model from [OpenAI](https://openai.com/) to generate the alternative texts. Only reduced (scaled, compressed) image data and no other user data is transmitted to OpenAI. OpenAI processes this data on behalf of the user. Your data will not be disclosed or passed on beyond this.
+The plugin uses a Large Language Model from *[OpenAI](https://openai.com/)* or *[Mistral AI](https://mistral.ai/)* to generate the alternative texts. (Selection of the model in the plugin settings.) Only reduced (scaled, compressed) image data and no other user data is transmitted to *OpenAI* or *Mistral AI*. *OpenAI* and *Mistral AI* processes this data on behalf of the user. Your data will not be disclosed or passed on beyond this.
 
 6. Data security
 
-Technical and organizational measures are taken to protect your data from unauthorized access, loss or manipulation. Your image data is transmitted to OpenAI in encrypted form via a secure API connection.
+Technical and organizational measures are taken to protect your data from unauthorized access, loss or manipulation. Your image data is transmitted to *OpenAI* in encrypted form via a secure API connection.
 
 7. Storage duration
 
-The stored license verification data (number of accesses and last access date) is stored for the entire service life of the plugin and deleted after the license period has expired. The image files transmitted to OpenAI are only stored locally and temporarily on your computer and are automatically deleted after InDesign is closed. [OpenAI](https://openai.com/) only stores data in accordance with its own terms of use and privacy policy.
+The stored license verification data (number of accesses and last access date) is stored for the entire service life of the plugin and deleted after the license period has expired. The image files transmitted to *OpenAI* are stored locally and temporarily in scaled format on your computer and are automatically deleted after InDesign is closed. *[OpenAI](https://openai.com/)* and *[Mistral AI](https://mistral.ai/)* stores data in accordance with its own terms of use and privacy policy.
 
 8. Your rights
 

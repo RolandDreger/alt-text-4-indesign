@@ -18,7 +18,7 @@ Die Erfassung der Zugriffsanzahl und des letzten Zugriffsdatums dient ausschlie�
 
 5. Weitergabe an Drittanbieter
 
-Das Plugin setzt zur Erzeugung der Alternativtexte ein Large Language Model von  [OpenAI](https://openai.com/) ein. Dabei werden ausschließlich verkleinerte (skalierte, komprimierte) Bilddaten und keine weiteren Nutzerdaten an OpenAI übermittelt. OpenAI verarbeitet diese Daten im Auftrag. Eine darüber hinausgehende Offenlegung oder Weitergabe Ihrer Daten erfolgt nicht.
+Das Plugin setzt zur Erzeugung der Alternativtexte ein Large Language Model von *[OpenAI](https://openai.com/)* oder *[Mistral AI](https://mistral.ai/)* ein. (Auswahl des Models in den Einstellungen des Plugins.) Dabei werden ausschließlich verkleinerte (skalierte, komprimierte) Bilddaten und keine weiteren Nutzerdaten an *OpenAI* oder *Mistral AI* übermittelt. *OpenAI* und *Mistral AI* verarbeitet diese Daten im Auftrag. Eine darüber hinausgehende Offenlegung oder Weitergabe Ihrer Daten erfolgt nicht.
 
 6. Datensicherheit
 
@@ -26,7 +26,7 @@ Es werden technische und organisatorische Maßnahmen getroffen, um Ihre Daten vo
 
 7. Speicherdauer
 
-Die gespeicherten Lizenzprüfungsdaten (Zugriffsanzahl und letztes Zugriffsdatum) werden über die gesamte Nutzungsdauer des Plugins aufbewahrt und nach Ablauf der Lizenzfrist gelöscht. Die an OpenAI übermittelten Bilddateien werden nur lokal und temporär auf Ihrem Rechner gespeichert und nach Schließen von InDesign automatisch gelöscht. [OpenAI](https://openai.com/) speichert Daten nur gemäß den eigenen Nutzungs- und Datenschutzbestimmungen.
+Die gespeicherten Lizenzprüfungsdaten (Zugriffsanzahl und letztes Zugriffsdatum) werden über die gesamte Nutzungsdauer des Plugins aufbewahrt und nach Ablauf der Lizenzfrist gelöscht. Die an *OpenAI* oder *Mistral AI* übermittelten Bilddateien werden lokal und temporär in skaliertem Format auf Ihrem Rechner gespeichert und nach dem Schließen von InDesign automatisch gelöscht. *[OpenAI](https://openai.com/)* und *[Mistral AI](https://mistral.ai/)* speichern Daten gemäß den eigenen Nutzungs- und Datenschutzbestimmungen.
 
 8. Ihre Rechte
 
