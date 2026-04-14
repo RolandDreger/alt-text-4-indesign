@@ -105,14 +105,18 @@ You can choose between two AI providers for the generation of alternative texts:
 
 The setting you choose will remain in place even after restarting InDesign.
 
-## Automated Actions
-### All linked Images
+### Automated Actions
+#### Generating custom ALT texts
 
-The `All linked images` action automatically assigns an alternative text to all objects with links. The active InDesign document is processed. Links whose InDesign object is marked as a decorative image or non-text element are skipped. 
+The `Generate all` action automatically **assigns an custom alternative text** to all objects with links. The active InDesign document is processed. Links whose InDesign object is marked as a decorative image or non-text element are skipped. 
 
-A Large Language Model (LLM) from OpenAI is used to create the alternative texts. The images are processed via the OpenAI API interface. The specifications for the generation instruction (prompt) and the target language are taken from the settings in the panel. If the prompt input field and the drop-down menu for the language selection are not visible, activate the checkbox `Instruction for ALT text` in the footer of the panel.
+A Large Language Model (LLM) from OpenAI or MistralAI is used to create the alternative texts. The images are processed via the OpenAI or MistralAI API interface. The specifications for the generation instruction (prompt) and the target language are taken from the settings in the panel. If the prompt input field and the drop-down menu for the language selection are not visible, activate the checkbox `Instruction for ALT text` in the footer of the panel.
 
 In the `Settings` tab, you can make **additional settings for automated Alt-text generation** in the `Automated actions` section. Here you can specify, for example, whether existing alternative text should be overwritten or whether existing text should be used as a context during generation.
+
+#### Removing custom ALT texts
+
+The `Remove all` action **removes the custom alternate text** for all objects on the document's spreads (including parent spreads). This action processes the active InDesign document. Entries for actual text remain unchanged. The values for the `Source for Actual Text` option are not altered by this action.
 
 ## Questions and support
 

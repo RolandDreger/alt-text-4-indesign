@@ -107,13 +107,17 @@ Für die Erstellung der alternativen Texte kann zwischen zwei KI-Anbietern gewä
 Die getroffene Einstellung bleibt auch nach dem Neu-Start von InDesign erhalten.
 
 ### Automatisierte Aktionen
-#### Alle verknüpften Bilder
+#### Benutzerdefinierte ALT-Texte erstellen
 
-Über die Aktion `Alle verknüpften Bilder` wird allen Objekten mit Verknüpfungen automatisiert ein alternativer Text zugewiesen. Verarbeitet wird dabei das aktive InDesign-Dokument. Verknüpfungen, deren InDesign-Objekt als dekoratives Bild oder außertextliches Element gekennzeichnet sind, werden dabei übersprungen.
+Die Aktion `Alle erstellen` **weist** allen Objekten mit Verknüpfungen automatisiert einen **benutzerdefinierter alternativer Text zu**. Verarbeitet wird dabei das aktive InDesign-Dokument. Verknüpfungen, deren InDesign-Objekt als dekoratives Bild oder außertextliches Element gekennzeichnet sind, werden dabei übersprungen.
 
-Für die Erstellung der alternativen Texte wird ein Large Language Model (LLM) von OpenAI verwendet. Die Bilder werden dazu über die API-Schnittstelle von OpenAI verarbeitet. Die Vorgaben für die Erstellungsanweisung (Prompt) und die Zielsprache werden aus den Eingaben im Panel übernommen. Ist das Prompt-Eingabefeld und das Dropdown-Menü für die Sprachauswahl nicht sichtbar, aktiviere die Checkbox `Anweisung für ALT-Text` im Fußbereich des Panels.
+Für die Erstellung der alternativen Texte wird ein Large Language Model (LLM) von OpenAI oder MistralAI verwendet. Die Bilder werden dazu über die API-Schnittstelle der Anbieter verarbeitet. Die Vorgaben für die Erstellungsanweisung (Prompt) und die Zielsprache werden aus den Eingaben im Panel übernommen. Ist das Prompt-Eingabefeld und das Dropdown-Menü für die Sprachauswahl nicht sichtbar, aktiviere die Checkbox `Anweisung für ALT-Text` im Fußbereich des Panels.
 
 Im Reiter `Settings` können im Abschnitt `Automatisierte Aktionen` **zusätzliche Einstellungen für die automatisierte ALT-Text-Erstellung** getroffen werden. Hier kannst du etwa festlegen, ob vorhandener alternativer Text überschrieben werden oder vorhandener Text bei der Erstellung als Kontext dienen soll.
+
+#### Benutzerdefinierte ALT-Texte entfernen
+
+Die Aktion `Alle entfernen` **entfernt den benutzerdefinierten alternative Text** für alle Objekte auf den Druckbögen des Dokuments (inklusive Musterdruckbögen). Verarbeitet wird dabei das aktive InDesign-Dokument. Die Einträge für tatsächlichen Text bleiben unverändert erhalten. Die Werte für die Option `Quelle für alternativen Text` wird durch dies Aktion nicht geändert.
 
 ## Fragen und Support
 
