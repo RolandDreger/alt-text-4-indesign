@@ -68,6 +68,20 @@ If the prompt input field with the dropdown for the language selection is not vi
 
 The source for the alternate text can be specified above the input field for the alternate text, for example if the alternative text is to be inserted from the object's metadata (XMP). To do this, use the `Source` drop-down menu on the right above the input field.
 
+## Context
+
+- `ALT-Text` The currently available alternative text is used as context—that is, the entire text visible in the `Alternative Text` field in the panel. 
+
+However, instead of using the existing alternative text, you can also enter additional information into this input field. Examples include the name of a person if they are to be identified, or the location depicted. 
+
+The intended use of the image is also important when creating alternative text. This can be specified more precisely by entering keywords in this field.
+
+- `Page` The entire text of the page on which the image is placed.
+
+- `Article` The surrounding text of the image is used as context. In the case of an anchored object, this corresponds to the story in which the image is anchored. Specifically, a few paragraphs before and after the image’s position are evaluated. If the image is not anchored but is part of an article (InDesign → Window → Article), the text of the article entries is read, and a few paragraphs before and after the image are used to generate the alternative text.
+
+- `Metadata` The metadata from the linked image file are used as context. The following metadata are evaluated: **Document Title** (dc:title), **Description** *(dc:description)*, **Keywords** *(dc:subject)*, **Headline** *(photoshop:Headline)*, **Alt Text** *(Iptc4xmpCore:AltTextAccessibility)*, and **Extended Description** *(Iptc4xmpCore:ExtDescrAccessibility)*.
+
 ## PDF with Tags
 
 You can also use the panel to change the options for exporting PDFs with a tag structure, including an input option for actual text or marking an object as an artefact.
@@ -90,6 +104,12 @@ The option `Decorative element (no PDF tag)` is always visible. If this checkbox
 
 The object marked in this way is also marked as a decorative element for ePub or HTML. In the exported ePub or HTML document, this element is assigned an empty alt attribute (i.e. alt=“”) and is therefore ignored by assistive technologies (e.g. screen readers).
 
+## Metadata
+
+Starting with version 2.2 of the plugin, an additional `Metadata` tab is available in the panel. This tab displays the metadata for the selected image. If an entry is empty or cannot be read in InDesign, a replacement dash (–) is displayed.
+
+The following metadata fields are evaluated: **Document Title** (dc:title), **Description** *(dc:description)*, **Keywords** *(dc:subject)*, **Headline** *(photoshop:Headline)*, **Alt Text** *(Iptc4xmpCore:AltTextAccessibility)*, **Extended Description** *(Iptc4xmpCore:ExtDescrAccessibility)*. This metadata will be included as context for generating the alternative text, if the option for this is selected. (see above)
+
 ## Settings
 ### License Key
 
@@ -108,15 +128,17 @@ The setting you choose will remain in place even after restarting InDesign.
 ### Automated Actions
 #### Generating custom ALT texts
 
-The `Generate all` action automatically **assigns an custom alternative text** to all objects with links. The active InDesign document is processed. Links whose InDesign object is marked as a decorative image or non-text element are skipped. 
+The `Generate all` action automatically **assigns an custom alternative text** to all objects with links. Links whose InDesign object is marked as a decorative image or non-text element are skipped. 
 
-A Large Language Model (LLM) from OpenAI or MistralAI is used to create the alternative texts. The images are processed via the OpenAI or MistralAI API interface. The specifications for the generation instruction (prompt) and the target language are taken from the settings in the panel. If the prompt input field and the drop-down menu for the language selection are not visible, activate the checkbox `Instruction for ALT text` in the footer of the panel.
+A Large Language Model (LLM) from OpenAI or MistralAI is used to create the alternative texts. The images are processed via the OpenAI or MistralAI API interface. The specifications for the generation instruction (prompt), the target language or the context are taken from the settings in the panel. If the prompt input field and the drop-down menu for the language selection are not visible, activate the checkbox `Instruction for ALT text` in the footer of the panel.
 
-In the `Settings` tab, you can make **additional settings for automated Alt-text generation** in the `Automated actions` section. Here you can specify, for example, whether existing alternative text should be overwritten or whether existing text should be used as a context during generation.
+In the `Settings` tab, you can make **additional settings for automated Alt-text generation** in the `Automated actions` section. Here you can specify whether to overwrite existing alternative text, whether to process the active document or all documents, and whether to include images on the pasteboard.
 
 #### Removing custom ALT texts
 
-The `Remove all` action **removes the custom alternate text** for all objects on the document's spreads (including parent spreads). This action processes the active InDesign document. Entries for actual text remain unchanged. The values for the `Source for Actual Text` option are not altered by this action.
+The `Remove all` action **removes the custom alternate text** for all objects. Entries for actual text remain unchanged. The values for the `Source for Actual Text` option are not altered by this action.
+
+In the `Settings` tab, you can make **additional settings for automatically removing alternative text** in the `Automated actions` section. Here you can specify whether to process the active document or all documents, and whether to include images on the pasteboard.
 
 ## Questions and support
 

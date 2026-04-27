@@ -1,9 +1,7 @@
 # ALT-Text-4-InDesign
 **Adobe InDesign plugins that assists users in creating alternate text for accessible documents.**
 
-Accessibility-4-InDesign currently contains two (independent) plugins: a [report panel](https://github.com/RolandDreger/accessibility-4-indesign) (with integrated question area) and this alt text panel. A plugin for contrast checking and preflights are currently being planned. The panels are intended to provide simple assistance in identifying accessibility issues in Adobe InDesign documents. 
-
-However, some specific problems that cannot be solved with the built-in tools in InDesigns must be fixed in Acrobat, ePub editors or with the help of specialized further extensions. For example, InDesign cannot currently set the PDF/UA marker. Or InDesign has problems with making tables accessible for PDF.
+Accessibility-4-InDesign currently contains two (independent) plugins: a [report panel](https://github.com/RolandDreger/accessibility-4-indesign) and this alt text panel. The panels are intended to provide simple assistance in identifying accessibility issues in Adobe InDesign documents.
 
 ## Installation
 
@@ -26,10 +24,6 @@ The license purchased via Adobe Exchange (Stock and Marketplace) is a single use
 ## Support
 
 roland.dreger@ik.me
-
-## Stay up to date
-
-To take part in the beta test or to stay up to date on the development of the plugins, you can [register on the Accessibility-4-InDesign website](https://rolanddreger.github.io/accessibility-4-indesign/).
 
 ## Credits
 

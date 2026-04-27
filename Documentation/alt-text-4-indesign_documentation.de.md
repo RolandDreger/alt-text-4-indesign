@@ -69,6 +69,22 @@ Ist das Prompt-Eingabefeld mit dem Dropdown für die Sprachauswahl nicht sichtba
 
 Über dem Eingabefeld für den alternativen Text kann die Quelle für diesen angegeben werden, beispielsweise wenn der alternative Text aus den Metadaten (XMP) des Objektes eingefügt werden soll. Verwende dazu das Dropdown-Menü `Quelle` rechts über dem Eingabefeld.
 
+### Kontext
+
+Über die Option `Kontext` kannst du festlegen, ob für die Erstellung des alternativen Textes zusätzliche Informationen miteinbezogen werden sollen. Du findest diese Option unter dem Eingabefeld für die Anweisung zur Erstellung des ALT-Textes. Es stehen folgende Auswahlmöglichkeiten zur Verfügung:
+
+- `ALT-Text` Der aktuell vorhandene alternative Text wird als Kontext verwendet, also der gesamte Text, der im Feld `Alternativer Text` im Panel sichtbar ist. 
+
+Statt dem vorhanden alternativen Text, kannst du aber auch zusätzliche Informationen in dieses Eingabefeld eingeben. Beispiele dafür sind etwa der Namen einer Person, wenn diese genannt werden soll, oder der abgebildete Ort. 
+
+Wichtig für die Erstellung eines alternativen Textes ist auch die Intention für die Verwendung des Bildes. Diese kann durch die Eingabe von Stichworten in dieses Feld genauer ausgeführt werden.
+
+- `Page` Der gesamte Text der Seite, auf der das Bild platziert ist, wird als Kontext verwendet.
+
+- `Article` Der umgebende Text des Bildes wird als Kontext verwendet. Im Falle eines verankerten Objekts entspricht dies dem Textfluss, in dem das Bild verankert ist. Konkret werden jeweils einige Absätze vor und nach der Bildposition ausgewertet. Ist das Bild nicht verankert, aber Teil eines Artikels (InDesign → Fenster → Artikel), werden die Texte der Artikeleinträge ausgelesen und einige Absätze vor und nach dem Bild für die Erstellung des alternativen Textes herangezogen.
+
+- `Metadata` Die Metadaten aus der verlinkten Bildatei werden als Kontext verwendet. Ausgewertet werden die Metadaten **Dokumenttitel** (dc:title), **Beschreibung** *(dc:description)*, **Stichwörter** *(dc:subject)*, **Überschrift** *(photoshop:Headline)*, **Alt-Text** *(Iptc4xmpCore:AltTextAccessibility)*, **Erweiterte Beschreibung** *(Iptc4xmpCore:ExtDescrAccessibility)*.
+
 ## PDF mit Tags
 
 Über das Panel kannst du auch die Optionen für den Export von PDFs mit Tagstruktur ändern, darunter etwa eine Eingabemöglichkeit für tatsächlichen Text oder die Auszeichnung eines Objekts als Schmuckelement.
@@ -91,6 +107,12 @@ Immer sichtbar ist die Option `Schmuckelement (kein PDF-Tag)`. Wird diese Checkb
 
 Zudem wird das so markierte Objekt als dekoratives Element gekennzeichnet. Im exportierten ePub- oder HTML-Dokument wird diesem Element ein leeres alt-Attribut zugewiesen (also alt="") und dadurch von assistiven Technologien (z.B. Screenreadern) ignoriert.   
 
+## Metadaten
+
+Ab der Version 2.2 des Plugins ist ein zusätzlicher Tab `Metadaten` im Panel vorhanden. In diesem Tab werden die Metadaten des ausgewähltes Bild angezeigt. Ist ein Eintrag leer oder kann in InDesign nicht ausgewertet werden, ist ein Ersatzstrich (–) zu sehen.
+
+Ausgewertet werden die Metadaten **Dokumenttitel** (dc:title), **Beschreibung** *(dc:description)*, **Stichwörter** *(dc:subject)*, **Überschrift** *(photoshop:Headline)*, **Alt-Text** *(Iptc4xmpCore:AltTextAccessibility)*, **Erweiterte Beschreibung** *(Iptc4xmpCore:ExtDescrAccessibility)*. Diese Metadaten werden als Kontext für die Erstellung des alternativen Textes miteinbezogen, sofern die Option dafür ausgewählt ist. (siehe oben)
+
 ## Einstellungen
 ### Lizenzschlüssel
 
@@ -109,15 +131,18 @@ Die getroffene Einstellung bleibt auch nach dem Neu-Start von InDesign erhalten.
 ### Automatisierte Aktionen
 #### Benutzerdefinierte ALT-Texte erstellen
 
-Die Aktion `Alle erstellen` **weist** allen Objekten mit Verknüpfungen automatisiert einen **benutzerdefinierter alternativer Text zu**. Verarbeitet wird dabei das aktive InDesign-Dokument. Verknüpfungen, deren InDesign-Objekt als dekoratives Bild oder außertextliches Element gekennzeichnet sind, werden dabei übersprungen.
+Die Aktion `Alle erstellen` **weist** allen Objekten mit Verknüpfungen automatisiert einen **benutzerdefinierter alternativer Text zu**. Verknüpfungen, deren InDesign-Objekt als dekoratives Bild oder außertextliches Element gekennzeichnet sind, werden dabei übersprungen.
 
-Für die Erstellung der alternativen Texte wird ein Large Language Model (LLM) von OpenAI oder MistralAI verwendet. Die Bilder werden dazu über die API-Schnittstelle der Anbieter verarbeitet. Die Vorgaben für die Erstellungsanweisung (Prompt) und die Zielsprache werden aus den Eingaben im Panel übernommen. Ist das Prompt-Eingabefeld und das Dropdown-Menü für die Sprachauswahl nicht sichtbar, aktiviere die Checkbox `Anweisung für ALT-Text` im Fußbereich des Panels.
+Für die Erstellung der alternativen Texte wird ein Large Language Model (LLM) von OpenAI oder MistralAI verwendet. Die Bilder werden dazu über die API-Schnittstelle der Anbieter verarbeitet. Die Vorgaben für die Erstellungsanweisung (Prompt), die Zielsprache oder den Kontext werden aus den Eingaben im Panel übernommen. Ist das Prompt-Eingabefeld und das Dropdown-Menü für die Sprachauswahl nicht sichtbar, aktiviere die Checkbox `Anweisung für ALT-Text` im Fußbereich des Panels.
 
-Im Reiter `Settings` können im Abschnitt `Automatisierte Aktionen` **zusätzliche Einstellungen für die automatisierte ALT-Text-Erstellung** getroffen werden. Hier kannst du etwa festlegen, ob vorhandener alternativer Text überschrieben werden oder vorhandener Text bei der Erstellung als Kontext dienen soll.
+Im Reiter `Settings` können im Abschnitt `Automatisierte Aktionen` **zusätzliche Einstellungen für die automatisierte ALT-Text-Erstellung** getroffen werden. Hier kannst du festlegen, ob vorhandene alternative Texte überschrieben, ob das aktive Dokument oder alle Dokumente verarbeitet oder ob Bilder auf der Montagefläche miteinbezogen werden sollen.
 
 #### Benutzerdefinierte ALT-Texte entfernen
 
-Die Aktion `Alle entfernen` **entfernt den benutzerdefinierten alternative Text** für alle Objekte auf den Druckbögen des Dokuments (inklusive Musterdruckbögen). Verarbeitet wird dabei das aktive InDesign-Dokument. Die Einträge für tatsächlichen Text bleiben unverändert erhalten. Die Werte für die Option `Quelle für alternativen Text` wird durch dies Aktion nicht geändert.
+Die Aktion `Alle entfernen` **entfernt den benutzerdefinierten alternative Text** für alle Objekte. Die Einträge für tatsächlichen Text bleiben unverändert erhalten. Die Werte für die Option `Quelle für alternativen Text` wird durch dies Aktion nicht geändert.
+
+Im Reiter `Settings` können im Abschnitt `Automatisierte Aktionen` **zusätzliche Einstellungen für die Entfernung der ALT-Texte** getroffen werden. Hier kannst du festlegen, ob das aktive Dokument oder alle Dokumente verarbeitet oder ob Bilder auf der Montagefläche miteinbezogen werden sollen.
+
 
 ## Fragen und Support
 
