@@ -132,13 +132,13 @@ The `Generate all` action automatically **assigns an custom alternative text** t
 
 A Large Language Model (LLM) from OpenAI or MistralAI is used to create the alternative texts. The images are processed via the OpenAI or MistralAI API interface. The specifications for the generation instruction (prompt), the target language or the context are taken from the settings in the panel. If the prompt input field and the drop-down menu for the language selection are not visible, activate the checkbox `Instruction for ALT text` in the footer of the panel.
 
-In the `Settings` tab, you can make **additional settings for automated Alt-text generation** in the `Automated actions` section. Here you can specify whether to overwrite existing alternative text, whether to process the active document or all documents, and whether to include images on the pasteboard.
+In the `Settings` tab, you can make **additional settings for automated Alt-text generation** in the `Automated actions` section. Here you can specify whether to overwrite existing alternative text, whether to process the active document or all documents, and whether to include images on hidden layers or on the pasteboard.
 
 #### Removing custom ALT texts
 
 The `Remove all` action **removes the custom alternate text** for all objects. Entries for actual text remain unchanged. The values for the `Source for Actual Text` option are not altered by this action.
 
-In the `Settings` tab, you can make **additional settings for automatically removing alternative text** in the `Automated actions` section. Here you can specify whether to process the active document or all documents, and whether to include images on the pasteboard.
+In the `Settings` tab, you can make **additional settings for automatically removing alternative text** in the `Automated actions` section. Here you can specify whether to process the active document or all documents, and whether to include hidden images or images on the pasteboard.
 
 ## Questions and support
 
