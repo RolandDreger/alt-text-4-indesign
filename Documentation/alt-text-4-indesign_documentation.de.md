@@ -135,13 +135,13 @@ Die Aktion `Alle erstellen` **weist** allen Objekten mit Verknüpfungen automati
 
 Für die Erstellung der alternativen Texte wird ein Large Language Model (LLM) von OpenAI oder MistralAI verwendet. Die Bilder werden dazu über die API-Schnittstelle der Anbieter verarbeitet. Die Vorgaben für die Erstellungsanweisung (Prompt), die Zielsprache oder den Kontext werden aus den Eingaben im Panel übernommen. Ist das Prompt-Eingabefeld und das Dropdown-Menü für die Sprachauswahl nicht sichtbar, aktiviere die Checkbox `Anweisung für ALT-Text` im Fußbereich des Panels.
 
-Im Reiter `Settings` können im Abschnitt `Automatisierte Aktionen` **zusätzliche Einstellungen für die automatisierte ALT-Text-Erstellung** getroffen werden. Hier kannst du festlegen, ob vorhandene alternative Texte überschrieben, ob das aktive Dokument oder alle Dokumente verarbeitet oder ob Bilder auf der Montagefläche miteinbezogen werden sollen.
+Im Reiter `Settings` können im Abschnitt `Automatisierte Aktionen` **zusätzliche Einstellungen für die automatisierte ALT-Text-Erstellung** getroffen werden. Hier kannst du festlegen, ob vorhandene alternative Texte überschrieben, ob das aktive Dokument oder alle Dokumente verarbeitet oder ob Bilder auf ausgeblendeten Ebenen oder der Montagefläche miteinbezogen werden sollen.
 
 #### Benutzerdefinierte ALT-Texte entfernen
 
 Die Aktion `Alle entfernen` **entfernt den benutzerdefinierten alternative Text** für alle Objekte. Die Einträge für tatsächlichen Text bleiben unverändert erhalten. Die Werte für die Option `Quelle für alternativen Text` wird durch dies Aktion nicht geändert.
 
-Im Reiter `Settings` können im Abschnitt `Automatisierte Aktionen` **zusätzliche Einstellungen für die Entfernung der ALT-Texte** getroffen werden. Hier kannst du festlegen, ob das aktive Dokument oder alle Dokumente verarbeitet oder ob Bilder auf der Montagefläche miteinbezogen werden sollen.
+Im Reiter `Settings` können im Abschnitt `Automatisierte Aktionen` **zusätzliche Einstellungen für die Entfernung der ALT-Texte** getroffen werden. Hier kannst du festlegen, ob das aktive Dokument oder alle Dokumente verarbeitet, ob ausgeblendete Bilder oder Bilder auf der Montagefläche miteinbezogen werden sollen.
 
 
 ## Fragen und Support
