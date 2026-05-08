@@ -16,6 +16,11 @@ The license purchased via Adobe Exchange (Stock and Marketplace) is a single use
 - [ALT-Text-4-InDesign Documentation](./Documentation/alt-text-4-indesign_documentation.en.md) (English)
 - [ALT-Text-4-InDesign Dokumentation](./Documentation/alt-text-4-indesign_documentation.de.md) (Deutsch)
 
+## Terms of Service
+
+- [ALT-Text-4-InDesign Terms of Service](./Terms_of_Service/alt-text-4-indesign_terms_of_service.en.md) (English)
+- [ALT-Text-4-InDesign Nutzungsbedingungen](./Terms_of_Service/alt-text-4-indesign_nutzungsbedingungen.de.md) (Deutsch)
+
 ## Privacy Policy
 
 - [ALT-Text-4-InDesign Privacy Policy](./Privacy_Policy/alt-text-4-indesign_privacy_policy.en.md) (English)
