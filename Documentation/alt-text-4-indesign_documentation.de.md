@@ -43,6 +43,17 @@ Warum ist diese Unterscheidung wichtig? Je nachdem, um welcher Objekttyp es sich
 
 Etwa wird bei einer Gruppe mit Bildrahmen beim PDF-Export der alternative Text dieser Gruppe übernommen und nicht der der einzelnen Bilder. Beim ePub-Export ist es genau umgekehrt. Besitzen sowohl die Gruppe also auch die gruppierten Bilder alternative Texte, kommt nur der ALT-Text der einzelnen Bilder und nicht der der Gruppe im ePub-Dokument an. Und auch beim Export von mathematischen Ausdrücken gibt es Unterschiede.
 
+### Metadaten aktualisieren
+
+Über den Button Metadaten `Aktualisieren` kannst du die Metadaten der verknüpften Bilddatei editieren. 
+
+**Eintrag** (der geändert wird):*Alt Text* (Barrierefreiheit) im Abschnitt *IPTC-Inhalt* der XMP-Metadaten.  
+**Wert** (der eingefügt wird): aktueller Eintrag im Eingabefeld `Alternativer Text` im Plugin-Panel, Tab *Bild*.
+
+Im Eintrag *Alt Text* (Barrierefreiheit) sind neben der Standard-Sprache (*x-default*) auch noch Einträge in weiteren Sprachen möglich. Wenn du mit unterschiedlichen Sprachen arbeiten möchtest, aktiviere dafür die Option `Mehrere Sprachen` in den Einstellungen im Abschnitt *Metadaten (XMP)*. Wenn nicht, lass diese Option deaktiviert und es wird immer nur der Standard-Wert hinzugefügt, geändert oder entfernt.
+
+**Hinweis**: Löschen kannst du den Eintrag in den Metadaten der Datei auch. Lass dafür das Eingabefeld `Alternativer Text` im Plugin-Panel leer und klick auf den Button Metadaten `Aktualisieren`. Wenn in den Einstellungen die Option `Mehrere Sprachen` aktiviert ist, wird der Eintrag der Sprache des alternativen Textes gelöscht. Ist die Option deaktiviert, wird der gesamte Eintrag *Alt Text* (Barrierefreiheit) aus den Metadaten der Datei entfernt.
+
 ### Prompt
 
 Für die automatisierte Erstellung des alternativen Textes ist eine Anweisung (Prompt) für das LLM vorgeben. Diesen Prompt-Vorschlag kannst du anpassen oder ganz neu eingeben. Aktiviere dazu die Checkbox `Anweisung für ALT-Text` im Fußbereich des Panels. Damit wird ein zusätzliches Eingabefeld eingeblendet.
@@ -63,7 +74,7 @@ Es kann vorkommen, dass die Sprache deiner InDesign-Benutzeroberfläche, nicht m
 
 Ist das Prompt-Eingabefeld mit dem Dropdown für die Sprachauswahl nicht sichtbar, aktiviere die Checkbox `Anweisung für ALT-Text` im Fußbereich des Panels. 
 
-**Hinweis:** Die Einstellung wirkt sich auch auf die automatisierte Erstellung der alternativen Texte aus.
+**Hinweis:** Die Einstellung wirkt sich auch auf die Aktualisierung der Metadaten der Bilddatei und die automatisierte Erstellung der alternativen Texte aus.
 
 ### Quelle für alternativen Text
 
@@ -127,6 +138,13 @@ Für die Erstellung der alternativen Texte kann zwischen zwei KI-Anbietern gewä
 - **Mistral AI** ist ein französisches Softwareunternehmen mit Sitz in Paris.
 
 Die getroffene Einstellung bleibt auch nach dem Neu-Start von InDesign erhalten.
+
+### Metadaten
+#### Update in Bilddatei
+
+**Mehrere Sprachen**: Mit dieser Option kannst du auswählen, ob der ALT Text in den Metadaten der Bild-Datei nur für den Standard-Wert *(x-default)* oder mehrere Sprachen (en, de, fr, ...) eingefügt werden soll. Diese Einstellung gilt auch für den Löschvorgang, wenn das Eingabefeld für den alternativen Text im Tab *Bild* leer ist.
+
+Ist die Option aktiviert, erscheint ein Dropdownmenü zur Auswahl der Standardsprache. Der ALT-Text der hier ausgewählten Sprache wird als Eintrag für die Sprache *x-default* in den Metadaten verwendet.
 
 ### Automatisierte Aktionen
 #### Benutzerdefinierte ALT-Texte erstellen

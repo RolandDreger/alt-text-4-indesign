@@ -42,6 +42,17 @@ Why is this distinction important? Depending on the object type, PDF and ePub ex
 
 For example, when exporting a group of image frames to PDF, the alternative text for that group is used rather than the alternative text for the individual images. When exporting to ePub, the opposite is true. If both the group and the grouped images have alternative texts, only the ALT text of the individual images and not that of the group is included in the ePub document. There are also differences when exporting mathematical expressions.
 
+### Update Metadata
+
+You can use the `Update` button in the Metadata section to edit the metadata of the linked image file. 
+
+**Entry** (to be changed): *Alt Text* (Accessibility) in the *IPTC Content* section of the XMP metadata.  
+**Value** (to be inserted): the current entry in the `Alternative Text` input field in the plugin panel, *Image* tab.
+
+In the *Alt Text* (Accessibility) entry, entries in multiple languages are possible in addition to the default language (*x-default*). If you want to work with different languages, enable the `Multiple Languages` option in the settings under the *Metadata (XMP)* section. Otherwise, leave this option disabled, and only the default value will be added, modified, or removed.
+
+**Note**: You can also delete the entry from the file’s metadata. To do so, leave the `Alternative Text` input field in the plugin panel blank and click the `Update` button in the metadata section. If the `Multiple Languages` option is enabled in the settings, the entry for the language of the alternative text will be deleted. If the option is disabled, the entire *Alt Text* (Accessibility) entry will be removed from the file’s metadata.
+
 ### Prompt
 
 An instruction (prompt) for the LLM is predefined for the automated generation of the alternative text. You can adapt this prompt suggestion or enter it from scratch. To do this, activate the checkbox `Alt-text instructions` in the footer of the panel. This will display an additional input field.
@@ -124,6 +135,13 @@ You can choose between two AI providers for the generation of alternative texts:
 - **Mistral AI** is a French software company based in Paris.
 
 The setting you choose will remain in place even after restarting InDesign.
+
+### Metadata
+#### Update in Image File
+
+**Multiple Languages**: With this option, you can choose whether the ALT text should be inserted into the image file's metadata only for the default value (x-default) or for multiple languages (en, de, fr, ...). This setting also applies to the deletion process if the input field for the alternative text in the *Image* tab is empty.
+
+If this option is enabled, a drop-down menu appears for selecting the default language. The ALT text for the language selected here is used as the entry for the *x-default* language in the metadata.
 
 ### Automated Actions
 #### Generating custom ALT texts
