@@ -16,9 +16,9 @@ The license key is entered in the `Settings` tab of the panel.
 
 Alternative text, also known as ALT text, is an essential component of accessible documents. It is used to describe non-textual content such as images or graphics and can be read and reproduced by assistive technologies such as screen readers.
 
-If an image is selected in the open InDesign document, the plugin reads the alternate text from the object export options. (Object → Object export options ... → Alternate text) If a text is available, it is displayed in the `Images` tab of the plugin panel in the top input field. You can also change the alternative text directly via the input field for the selected object.
+If an image is selected in the open InDesign document, the plugin reads the alternate text from the object export options. (Object → Object Export Options ... → Alternate text) If a text is available, it is displayed in the `Images` tab of the plugin panel in the top input field. You can also change the alternative text directly via the input field for the selected object.
 
-If no alternative text is stored, you can insert one using the input field in the panel. To do so, activate the checkbox `Custom Alt-text` and enter the desired text in the field. This is then applied as the alternative text for the selected object.
+If no alternative text is stored, you can insert one using the input field in the panel. To do so, enter the desired text in this field. The text you entered is then applied as the custom alternative text for the selected object in the *Object Export Options*.
 
 [Preview Alt-text generation on vimeo](https://vimeo.com/1026952093)
 
@@ -51,6 +51,8 @@ You can use the refesh `XMP` button to edit the metadata (XMP) of the linked ima
 **Inserted Value**: The current entry in the `Alternate Text` input field in the plugin panel, *Image* tab.
 
 In the *Alt Text (Accessibility)* entry, entries in multiple languages are possible in addition to the default language (*x-default*). If you want to work with different languages, enable the `Multiple Languages` option in the settings under the *Metadata (XMP)* section. Otherwise, leave this option disabled, and only the default value will be added, modified, or removed.
+
+**Note**: The metadata for the linked file can only be updated if the option *Custom* is selected as the *Alt Text Source*. Otherwise, the `XMP` update button for the selected object is hidden. The button is also hidden if the metadata cannot be updated, such as for embedded images.
 
 **Note**: You can also delete the *Alt Text (Accessibility)* entry from the file’s metadata. To do so, leave the `Alternative Text` input field in the plugin panel blank and click the refesh `XMP` button in the metadata section. If the `Multiple Languages` option is enabled in the settings, the entry for the language of the alternative text will be deleted. If the option is disabled, the entire *Alt Text (Accessibility)* entry will be removed from the file’s metadata.
 
@@ -144,7 +146,7 @@ In the `Settings` tab, you can make **additional settings for automatically remo
 The `Update Metadata` action automatically **updates** the metadata in the files for all objects with links.
 
 **Changed entry**: *Alt Text (Accessibility)* in the *IPTC Content* section of the XMP metadata.
-**Inserted value**: Current entry in the object’s export options. (Source for alternative text: Custom)
+**Inserted value**: Current entry in the object’s export options. (Alt Text Source: Custom)
 
 In the *Alt Text (Accessibility)* entry, entries in multiple languages are possible in addition to the default language (*x-default*). If you want to work with different languages, enable the `Multiple Languages` option in the settings under the *Metadata (XMP)* section. Otherwise, leave this option disabled, and only the default value will be added or modified.
 

@@ -18,7 +18,7 @@ Alternativer Text, auch ALT-Text genannt, ist ein wesentlicher Bestandteil von b
 
 Wird ein Bild im geöffneten InDesign-Dokument ausgewählt, liest das Plugin den alternativen Text aus den Objektexportoptionen aus. (Objekt → Objektexportoptionen ...  → Alternativer Text) Ist ein Text hinterlegt, wird dieser im Tab `Bilder` des Plugin-Panels im obersten Eingabefeld angezeigt. Über dieses Eingabefeld kannst du den Alternativtext für das ausgewählte Objekt auch direkt neu eingeben oder anpassen.
 
-Ist kein alternativer Text hinterlegt, kann ein solcher über das Eingabefeld im Panel eingefügt werden. Dazu die Checkbox `Benutzerdefinierter ALT-Text` anhaken und im Feld den gewünschten Text eingeben. Dieser wird dann als alternativer Text für das ausgewählte Objekt übernommen.
+Ist kein alternativer Text hinterlegt, kann ein solcher über das Eingabefeld im Panel eingefügt werden. Dazu in diesem Feld den gewünschten Text eingeben. Der eingegebene Text wird damit als benutzerdefinierter alternativer Text für das ausgewählte Objekt in den *Objektexportoptionen* übernommen.
 
 [Vorschau der Erstellung von alternativem Text on vimeo](https://vimeo.com/1026952093)
 
@@ -51,6 +51,8 @@ Etwa wird bei einer Gruppe mit Bildrahmen beim PDF-Export der alternative Text d
 **Eingefügter Wert**: Aktueller Eintrag im Eingabefeld `Alternativer Text` im Plugin-Panel, Tab *Bild*.
 
 Im Eintrag *Alt Text (Barrierefreiheit)* sind neben der Standard-Sprache (*x-default*) auch Einträge in weiteren Sprachen möglich. Wenn du mit unterschiedlichen Sprachen arbeiten möchtest, aktiviere dafür die Option `Mehrere Sprachen` in den Einstellungen im Abschnitt *Metadaten (XMP)*. Wenn nicht, lass diese Option deaktiviert und es wird immer nur der Standard-Wert hinzugefügt, geändert oder entfernt.
+
+**Hinweis**: Die Metadaten für die verknüpfte Datei können nur aktualisiert werden, wenn als *Quelle für alternativen Text* die Option *Benutzerdefiniert* ausgewählt ist. Andernfalls wird der Button `XMP`-Aktualisieren für das ausgewählte Objekt ausgeblendet. Der Button wird ebenfalls ausgeblendet, wenn keine Aktualisierung der Metadaten möglich ist, z.B. bei eingebetteten Bildern.
 
 **Hinweis**: Der Eintrag *Alt Text (Barrierefreiheit)* kann auch vollständig aus den Metadaten der Datei gelöscht werden. Lass dafür das Eingabefeld `Alternativer Text` im Plugin-Panel leer und klick auf den Button `XMP`-Aktualisieren. Wenn in den Einstellungen die Option `Mehrere Sprachen` aktiviert ist, wird der Eintrag der jeweiligen Sprache des alternativen Textes gelöscht. Ist diese Option deaktiviert, wird der gesamte Eintrag *Alt Text (Barrierefreiheit)* aus den Metadaten der Datei entfernt.
 
