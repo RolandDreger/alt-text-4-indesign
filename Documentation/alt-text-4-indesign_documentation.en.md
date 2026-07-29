@@ -116,35 +116,6 @@ The option `Decorative element (no PDF tag)` is always visible. If this checkbox
 
 The object marked in this way is also marked as a decorative element for ePub or HTML. In the exported ePub or HTML document, this element is assigned an empty alt attribute (i.e. alt=“”) and is therefore ignored by assistive technologies (e.g. screen readers).
 
-## Metadata
-
-Starting with version 2.2 of the plugin, an additional `Metadata` tab is available in the panel. This tab displays the metadata for the selected image. If an entry is empty or cannot be read in InDesign, a replacement dash (–) is displayed.
-
-The following metadata fields are evaluated: **Document Title** (dc:title), **Description** *(dc:description)*, **Keywords** *(dc:subject)*, **Headline** *(photoshop:Headline)*, **Alt Text** *(Iptc4xmpCore:AltTextAccessibility)*, **Extended Description** *(Iptc4xmpCore:ExtDescrAccessibility)*. This metadata will be included as context for generating the alternative text, if the option for this is selected. (see above)
-
-## Settings
-### License Key
-
-In the `Settings` tab, you can enter the license key that you got when you purchased the plug-in.
-
-### ALT text creation
-#### AI providers
-
-You can choose between two AI providers for the generation of alternative texts:
-
-- **OpenAI** is a U.S. software company based in San Francisco. Use OpenAI for general subjects and concise alternative text.
-- **Google** is a U.S. software company based in California. Google is particularly good at object recognition, even for unusual subjects.
-- **Mistral AI** is a French software company based in Paris. Choose Mistral AI if it’s important to you that your image data are processed in Europe.
-
-The setting you choose will remain in place even after restarting InDesign.
-
-### Metadata (XMP)
-#### Update in Image File
-
-**Multiple Languages**: With this option, you can choose whether the ALT text should be inserted into the image file's metadata (XMP) only for the default value (x-default) or for multiple languages (en, de, fr, ...). This setting also applies to the deletion process if the input field for the alternative text in the *Image* tab is empty.
-
-If this option is enabled, a drop-down menu appears for selecting the default language. The ALT text for the language selected here is used as the entry for the *x-default* language in the metadata.
-
 ### Automated Actions
 #### Generating custom ALT texts for images
 
@@ -178,6 +149,36 @@ The `Update Metadata` action automatically **updates** the metadata in the files
 In the *Alt Text (Accessibility)* entry, entries in multiple languages are possible in addition to the default language (*x-default*). If you want to work with different languages, enable the `Multiple Languages` option in the settings under the *Metadata (XMP)* section. Otherwise, leave this option disabled, and only the default value will be added or modified.
 
 In the `Settings` tab, under the `Automated Actions` section, you can configure **additional settings for updating metadata**. Here, you can specify whether to overwrite existing metadata, whether to process the active document or all documents, and whether to include hidden images or images on the artboard.
+
+
+## Metadata
+
+Starting with version 2.2 of the plugin, an additional `Metadata` tab is available in the panel. This tab displays the metadata for the selected image. If an entry is empty or cannot be read in InDesign, a replacement dash (–) is displayed.
+
+The following metadata fields are evaluated: **Document Title** (dc:title), **Description** *(dc:description)*, **Keywords** *(dc:subject)*, **Headline** *(photoshop:Headline)*, **Alt Text** *(Iptc4xmpCore:AltTextAccessibility)*, **Extended Description** *(Iptc4xmpCore:ExtDescrAccessibility)*. This metadata will be included as context for generating the alternative text, if the option for this is selected. (see above)
+
+## Settings
+### License Key
+
+In the `Settings` tab, you can enter the license key that you got when you purchased the plug-in.
+
+### ALT text creation
+#### AI providers
+
+You can choose between two AI providers for the generation of alternative texts:
+
+- **OpenAI** is a U.S. software company based in San Francisco. Use OpenAI for general subjects and concise alternative text.
+- **Google** is a U.S. software company based in California. Google is particularly good at object recognition, even for unusual subjects.
+- **Mistral AI** is a French software company based in Paris. Choose Mistral AI if it’s important to you that your image data are processed in Europe.
+
+The setting you choose will remain in place even after restarting InDesign.
+
+### Metadata (XMP)
+#### Update in Image File
+
+**Multiple Languages**: With this option, you can choose whether the ALT text should be inserted into the image file's metadata (XMP) only for the default value (x-default) or for multiple languages (en, de, fr, ...). This setting also applies to the deletion process if the input field for the alternative text in the *Image* tab is empty.
+
+If this option is enabled, a drop-down menu appears for selecting the default language. The ALT text for the language selected here is used as the entry for the *x-default* language in the metadata.
 
 ## Questions and support
 

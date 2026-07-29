@@ -118,35 +118,6 @@ Immer sichtbar ist die Option `Schmuckelement (kein PDF-Tag)`. Wird diese Checkb
 
 Zudem wird das so markierte Objekt als dekoratives Element gekennzeichnet. Im exportierten ePub- oder HTML-Dokument wird diesem Element ein leeres alt-Attribut zugewiesen (also alt="") und dadurch von assistiven Technologien (z.B. Screenreadern) ignoriert.   
 
-## Metadaten
-
-Ab der Version 2.2 des Plugins ist ein zusätzlicher Tab `Metadaten` im Panel vorhanden. In diesem Tab werden die Metadaten des ausgewähltes Bild angezeigt. Ist ein Eintrag leer oder kann in InDesign nicht ausgewertet werden, ist ein Ersatzstrich (–) zu sehen.
-
-Ausgewertet werden die Metadaten **Dokumenttitel** (dc:title), **Beschreibung** *(dc:description)*, **Stichwörter** *(dc:subject)*, **Überschrift** *(photoshop:Headline)*, **Alt-Text** *(Iptc4xmpCore:AltTextAccessibility)*, **Erweiterte Beschreibung** *(Iptc4xmpCore:ExtDescrAccessibility)*. Diese Metadaten werden als Kontext für die Erstellung des alternativen Textes miteinbezogen, sofern die Option dafür ausgewählt ist. (siehe oben)
-
-## Einstellungen
-### Lizenzschlüssel
-
-Im Reiter `Einstellungen` kann der Lizenzschlüssel eingegeben werden, den du beim Kauf des Plug-ins erhalten hast.
-
-### ALT-Text Erstellung
-#### KI-Anbieter
-
-Für die Erstellung der alternativen Texte kann zwischen zwei KI-Anbietern gewählt werden: 
-
-- **OpenAI** ist ein US-amerikanisches Softwareunternehmen mit Sitz in San Francisco. Verwende OpenAI für allgemeine Motive und prägnante Alternativtexte. 
-- **Google** ist ein US-amerikanisches Softwareunternehmen mit Sitz in Kalifornien. Der Anbieter Google ist besonders gut bei der Objekterkennung, auch bei nicht ganz so alltäglichen Motiven.
-- **Mistral AI** ist ein französisches Softwareunternehmen mit Sitz in Paris. Wähle Mistral AI als Anbieter, wenn dir eine Verarbeitung der Bilddaten in Europa wichtig ist.
-
-Die getroffene Einstellung bleibt auch nach dem Neu-Start von InDesign erhalten.
-
-### Metadaten
-#### Update in Bilddatei
-
-**Mehrere Sprachen**: Mit dieser Option kannst du auswählen, ob der ALT Text in den Metadaten der Bild-Datei nur für den Standard-Wert *(x-default)* oder mehrere Sprachen (en, de, fr, ...) eingefügt werden soll. Diese Einstellung gilt auch für den Löschvorgang, wenn das Eingabefeld für den alternativen Text im Tab *Bild* leer ist.
-
-Ist die Option aktiviert, erscheint ein Dropdownmenü zur Auswahl der Standardsprache. Der ALT-Text der hier ausgewählten Sprache wird als Eintrag für die Sprache *x-default* in den Metadaten verwendet.
-
 ### Automatisierte Aktionen
 #### Benutzerdefinierte ALT-Texte für Bilder erstellen
 
@@ -180,6 +151,35 @@ Die Aktion `Metadaten aktualisieren` **aktualisiert** automatisiert die Metadate
 Im Eintrag *Alt Text (Barrierefreiheit)* sind neben der Standard-Sprache (*x-default*) auch Einträge in weiteren Sprachen möglich. Wenn du mit unterschiedlichen Sprachen arbeiten möchtest, aktiviere dafür die Option `Mehrere Sprachen` in den Einstellungen im Abschnitt *Metadaten (XMP)*. Wenn nicht, lass diese Option deaktiviert und es wird immer nur der Standard-Wert hinzugefügt oder geändert.
 
 Im Reiter `Settings` können im Abschnitt `Automatisierte Aktionen` **zusätzliche Einstellungen für die Aktualisierung der Metadaten** getroffen werden. Hier kannst du festlegen, ob vorhandene Metadaten überschrieben, ob das aktive Dokument oder alle Dokumente verarbeitet, ob ausgeblendete Bilder oder Bilder auf der Montagefläche miteinbezogen werden sollen.
+
+## Metadaten
+
+Ab der Version 2.2 des Plugins ist ein zusätzlicher Tab `Metadaten` im Panel vorhanden. In diesem Tab werden die Metadaten des ausgewähltes Bild angezeigt. Ist ein Eintrag leer oder kann in InDesign nicht ausgewertet werden, ist ein Ersatzstrich (–) zu sehen.
+
+Ausgewertet werden die Metadaten **Dokumenttitel** (dc:title), **Beschreibung** *(dc:description)*, **Stichwörter** *(dc:subject)*, **Überschrift** *(photoshop:Headline)*, **Alt-Text** *(Iptc4xmpCore:AltTextAccessibility)*, **Erweiterte Beschreibung** *(Iptc4xmpCore:ExtDescrAccessibility)*. Diese Metadaten werden als Kontext für die Erstellung des alternativen Textes miteinbezogen, sofern die Option dafür ausgewählt ist. (siehe oben)
+
+## Einstellungen
+### Lizenzschlüssel
+
+Im Reiter `Einstellungen` kann der Lizenzschlüssel eingegeben werden, den du beim Kauf des Plug-ins erhalten hast.
+
+### ALT-Text Erstellung
+#### KI-Anbieter
+
+Für die Erstellung der alternativen Texte kann zwischen zwei KI-Anbietern gewählt werden: 
+
+- **OpenAI** ist ein US-amerikanisches Softwareunternehmen mit Sitz in San Francisco. Verwende OpenAI für allgemeine Motive und prägnante Alternativtexte. 
+- **Google** ist ein US-amerikanisches Softwareunternehmen mit Sitz in Kalifornien. Der Anbieter Google ist besonders gut bei der Objekterkennung, auch bei nicht ganz so alltäglichen Motiven.
+- **Mistral AI** ist ein französisches Softwareunternehmen mit Sitz in Paris. Wähle Mistral AI als Anbieter, wenn dir eine Verarbeitung der Bilddaten in Europa wichtig ist.
+
+Die getroffene Einstellung bleibt auch nach dem Neu-Start von InDesign erhalten.
+
+### Metadaten
+#### Update in Bilddatei
+
+**Mehrere Sprachen**: Mit dieser Option kannst du auswählen, ob der ALT Text in den Metadaten der Bild-Datei nur für den Standard-Wert *(x-default)* oder mehrere Sprachen (en, de, fr, ...) eingefügt werden soll. Diese Einstellung gilt auch für den Löschvorgang, wenn das Eingabefeld für den alternativen Text im Tab *Bild* leer ist.
+
+Ist die Option aktiviert, erscheint ein Dropdownmenü zur Auswahl der Standardsprache. Der ALT-Text der hier ausgewählten Sprache wird als Eintrag für die Sprache *x-default* in den Metadaten verwendet.
 
 ## Fragen und Support
 
