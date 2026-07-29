@@ -8,7 +8,7 @@ Die Installation erfolgt über die Adobe Creativ Cloud Anwendung (Stock und Mark
 
 ## Lizenz
 
-Bei der über Adobe Exchange (Stock und Marktplatz) erworbenen Lizenz handelt es sich um eine Einzelplatzlizenz. Die Abfragen an das Large Language Model (LLM) von OpenAI sind dabei inkludiert. (Fair Use Policy) Anfragen bezüglich einer Enterprise-Lizenz an [roland.dreger@ik.me](mailto:roland.dreger@ik.me).
+Bei der über Adobe Exchange (Stock und Marktplatz) erworbenen Lizenz handelt es sich um eine Einzelplatzlizenz. Die Kosten für die Abfragen bei den Large Language Modellen (LLM) von *OpenAI*, *Google* oder *Mistral AI* sind im Plugin-Preis inkludiert. (Fair Use Policy) Anfragen bezüglich einer Enterprise-Lizenz an [roland.dreger@ik.me](mailto:roland.dreger@ik.me).
 
 Der Lizenzschlüssel wird im Reiter `Einstellungen` des Panels eingegeben.
 
@@ -22,7 +22,7 @@ Ist kein alternativer Text hinterlegt, kann ein solcher über das Eingabefeld im
 
 [Vorschau der Erstellung von alternativem Text on vimeo](https://vimeo.com/1026952093)
 
-Über den Button `Erstellen` kann ein Vorschlag für einen alternativen Text erstellt werden. Die Erstellung basiert dabei auf einem Large Language Model (LLM) von OpenAI. Bitte beachte, dass Sprachmodelle Fehler machen können. Überprüfe deshalb die vorgeschlagenen Texte und gib keine sensiblen Daten in das Prompt-Eingabefeld ein, beispielsweise keine personenbezogenen oder vertraulichen Daten.
+Über den Button `Erstellen` kann ein Vorschlag für einen alternativen Text erstellt werden. Die Erstellung basiert dabei auf einem Large Language Model (LLM) von *OpenAI*, *Google* oder *Mistral AI*. Bitte beachte, dass Sprachmodelle Fehler machen können. Überprüfe deshalb die vorgeschlagenen Texte und gib keine sensiblen Daten in das Prompt-Eingabefeld ein, beispielsweise keine personenbezogenen oder vertraulichen Daten.
 
 Ein vorhandener Text im ALT-Text-Feld (oberstes Eingabefeld im Plugin-Panel) gibt den Kontext für die Erstellung des (neuen) ALT-Textes vor. Das ist beispielsweise dann hilfreich, wenn eine bestimmte Region für eine Landschaftsaufnahme oder der Namen einer bekannten Person auf einer Aufnahme für die Beschreibung des Inhaltes miteinbezogen werden soll.
 
@@ -47,12 +47,12 @@ Etwa wird bei einer Gruppe mit Bildrahmen beim PDF-Export der alternative Text d
 
 Über den Button `XMP`-Aktualisieren kannst du die Metadaten der verknüpften Bilddatei editieren. 
 
-**Eintrag** (der geändert wird):*Alt Text* (Barrierefreiheit) im Abschnitt *IPTC-Inhalt* der XMP-Metadaten.  
-**Wert** (der eingefügt wird): aktueller Eintrag im Eingabefeld `Alternativer Text` im Plugin-Panel, Tab *Bild*.
+**Geänderter Eintrag**: *Alt Text* (Barrierefreiheit) im Abschnitt *IPTC-Inhalt* der XMP-Metadaten.  
+**Eingefügter Wert**: Aktueller Eintrag im Eingabefeld `Alternativer Text` im Plugin-Panel, Tab *Bild*.
 
-Im Eintrag *Alt Text* (Barrierefreiheit) sind neben der Standard-Sprache (*x-default*) auch noch Einträge in weiteren Sprachen möglich. Wenn du mit unterschiedlichen Sprachen arbeiten möchtest, aktiviere dafür die Option `Mehrere Sprachen` in den Einstellungen im Abschnitt *Metadaten (XMP)*. Wenn nicht, lass diese Option deaktiviert und es wird immer nur der Standard-Wert hinzugefügt, geändert oder entfernt.
+Im Eintrag *Alt Text* (Barrierefreiheit) sind neben der Standard-Sprache (*x-default*) auch Einträge in weiteren Sprachen möglich. Wenn du mit unterschiedlichen Sprachen arbeiten möchtest, aktiviere dafür die Option `Mehrere Sprachen` in den Einstellungen im Abschnitt *Metadaten (XMP)*. Wenn nicht, lass diese Option deaktiviert und es wird immer nur der Standard-Wert hinzugefügt, geändert oder entfernt.
 
-**Hinweis**: Löschen kannst du den Eintrag in den Metadaten der Datei auch. Lass dafür das Eingabefeld `Alternativer Text` im Plugin-Panel leer und klick auf den Button `XMP`-Aktualisieren. Wenn in den Einstellungen die Option `Mehrere Sprachen` aktiviert ist, wird der Eintrag der Sprache des alternativen Textes gelöscht. Ist die Option deaktiviert, wird der gesamte Eintrag *Alt Text* (Barrierefreiheit) aus den Metadaten der Datei entfernt.
+**Hinweis**: Der Eintrag *Alt Text* (Barrierefreiheit) kann auch vollständig aus den Metadaten der Datei gelöscht werden. Lass dafür das Eingabefeld `Alternativer Text` im Plugin-Panel leer und klick auf den Button `XMP`-Aktualisieren. Wenn in den Einstellungen die Option `Mehrere Sprachen` aktiviert ist, wird der Eintrag der jeweiligen Sprache des alternativen Textes gelöscht. Ist diese Option deaktiviert, wird der gesamte Eintrag *Alt Text* (Barrierefreiheit) aus den Metadaten der Datei entfernt.
 
 ### Prompt
 
@@ -134,8 +134,9 @@ Im Reiter `Einstellungen` kann der Lizenzschlüssel eingegeben werden, den du be
 
 Für die Erstellung der alternativen Texte kann zwischen zwei KI-Anbietern gewählt werden: 
 
-- **OpenAI** ist ein US-amerikanisches Softwareunternehmen mit Sitz in San Francisco.
-- **Mistral AI** ist ein französisches Softwareunternehmen mit Sitz in Paris.
+- **OpenAI** ist ein US-amerikanisches Softwareunternehmen mit Sitz in San Francisco. Verwende OpenAI für allgemeine Motive und prägnante Alternativtexte. 
+- **Google** ist ein US-amerikanisches Softwareunternehmen mit Sitz in Kalifornien. Der Anbieter Google ist besonders gut bei der Objekterkennung, auch bei nicht ganz so alltäglichen Motiven.
+- **Mistral AI** ist ein französisches Softwareunternehmen mit Sitz in Paris. Wähle Mistral AI als Anbieter, wenn dir eine Verarbeitung der Bilddaten in Europa wichtig ist.
 
 Die getroffene Einstellung bleibt auch nach dem Neu-Start von InDesign erhalten.
 
@@ -147,13 +148,21 @@ Die getroffene Einstellung bleibt auch nach dem Neu-Start von InDesign erhalten.
 Ist die Option aktiviert, erscheint ein Dropdownmenü zur Auswahl der Standardsprache. Der ALT-Text der hier ausgewählten Sprache wird als Eintrag für die Sprache *x-default* in den Metadaten verwendet.
 
 ### Automatisierte Aktionen
-#### Benutzerdefinierte ALT-Texte erstellen
+#### Benutzerdefinierte ALT-Texte für Bilder erstellen
 
-Die Aktion `Alle erstellen` **weist** allen Objekten mit Verknüpfungen automatisiert einen **benutzerdefinierter alternativer Text zu**. Verknüpfungen, deren InDesign-Objekt als dekoratives Bild oder außertextliches Element gekennzeichnet sind, werden dabei übersprungen.
+Die Aktion `ALT-Texte für Bilder` **erstellt** für alle Objekte mit Verknüpfungen automatisiert einen **benutzerdefinierten alternativen Text**. Verknüpfungen, deren InDesign-Objekt als dekoratives Bild oder außertextliches Element gekennzeichnet sind, werden dabei übersprungen.
 
-Für die Erstellung der alternativen Texte wird ein Large Language Model (LLM) von OpenAI oder MistralAI verwendet. Die Bilder werden dazu über die API-Schnittstelle der Anbieter verarbeitet. Die Vorgaben für die Erstellungsanweisung (Prompt), die Zielsprache oder den Kontext werden aus den Eingaben im Panel übernommen. Ist das Prompt-Eingabefeld und das Dropdown-Menü für die Sprachauswahl nicht sichtbar, aktiviere die Checkbox `Anweisung für ALT-Text` im Fußbereich des Panels.
+Für die Erstellung der alternativen Texte wird ein Large Language Model (LLM) von *OpenAI*, *Google* oder *Mistral AI* verwendet. Die Bilder werden dazu über die API-Schnittstelle der Anbieter verarbeitet. Die Vorgaben für die Anweisung zur Erstellung (Prompt), die Zielsprache und den Kontext werden aus den Eingaben im Panel übernommen. Ist das Prompt-Eingabefeld und das Dropdown-Menü für die Sprachauswahl nicht sichtbar, aktiviere die Checkbox `Anweisung für ALT-Text` im Fußbereich des Panels.
 
 Im Reiter `Settings` können im Abschnitt `Automatisierte Aktionen` **zusätzliche Einstellungen für die automatisierte ALT-Text-Erstellung** getroffen werden. Hier kannst du festlegen, ob vorhandene alternative Texte überschrieben, ob das aktive Dokument oder alle Dokumente verarbeitet oder ob Bilder auf ausgeblendeten Ebenen oder der Montagefläche miteinbezogen werden sollen.
+
+#### Benutzerdefinierte ALT-Texte für mathematische Ausdrücke erstellen
+
+Die Aktion `ALT-Texte für MathML` **erstellt** automatisiert für alle (InDesign-eigenen) mathematische Ausdrücke einen **benutzerdefinierten alternativen Text**. Mathematische Ausdrücke, die als dekoratives Bild oder außertextliches Element gekennzeichnet sind, werden dabei übersprungen.
+
+Die Zielsprache wird aus der Einstellung im Panel übernommen. Ist das Dropdown-Menü für die Sprachauswahl nicht sichtbar, aktiviere die Checkbox `Anweisung für ALT-Text` im Fußbereich des Panels.
+
+Im Reiter `Settings` können im Abschnitt `Automatisierte Aktionen` **zusätzliche Einstellungen für die automatisierte ALT-Text-Erstellung** getroffen werden. Hier kannst du festlegen, ob vorhandene alternative Texte überschrieben, ob das aktive Dokument oder alle Dokumente verarbeitet oder ob mathematische Ausdrücke auf ausgeblendeten Ebenen oder der Montagefläche miteinbezogen werden sollen.
 
 #### Benutzerdefinierte ALT-Texte entfernen
 
@@ -161,6 +170,16 @@ Die Aktion `Alle entfernen` **entfernt den benutzerdefinierten alternative Text*
 
 Im Reiter `Settings` können im Abschnitt `Automatisierte Aktionen` **zusätzliche Einstellungen für die Entfernung der ALT-Texte** getroffen werden. Hier kannst du festlegen, ob das aktive Dokument oder alle Dokumente verarbeitet, ob ausgeblendete Bilder oder Bilder auf der Montagefläche miteinbezogen werden sollen.
 
+#### Metadaten der verknüpften Datei aktualisieren
+
+Die Aktion `Metadaten aktualisieren` **aktualisiert** automatisiert die Metadaten in den Dateien für alle Objekte mit Verknüpfungen. 
+
+**Geänderter Eintrag**: *Alt Text* (Barrierefreiheit) im Abschnitt *IPTC-Inhalt* der XMP-Metadaten.  
+**Eingefügter Wert**: Aktueller Eintrag in den Objektexportoptionen des Objekts. (Quelle für alternativen Text: Benutzerdefiniert)
+
+Im Eintrag *Alt Text* (Barrierefreiheit) sind neben der Standard-Sprache (*x-default*) auch Einträge in weiteren Sprachen möglich. Wenn du mit unterschiedlichen Sprachen arbeiten möchtest, aktiviere dafür die Option `Mehrere Sprachen` in den Einstellungen im Abschnitt *Metadaten (XMP)*. Wenn nicht, lass diese Option deaktiviert und es wird immer nur der Standard-Wert hinzugefügt oder geändert.
+
+Im Reiter `Settings` können im Abschnitt `Automatisierte Aktionen` **zusätzliche Einstellungen für die Aktualisierung der Metadaten** getroffen werden. Hier kannst du festlegen, ob vorhandene Metadaten überschrieben, ob das aktive Dokument oder alle Dokumente verarbeitet, ob ausgeblendete Bilder oder Bilder auf der Montagefläche miteinbezogen werden sollen.
 
 ## Fragen und Support
 

@@ -8,7 +8,7 @@ Installation is done via the Adobe Creative Cloud application (Stock and Marketp
 
 ## License
 
-The license purchased via Adobe Exchange (Stock and Marketplace) is a single user license. Requests to the OpenAI Large Language Model (LLM) are included. (Fair Use Policy) Inquiries regarding an Enterprise license to [roland.dreger@ik.me](mailto:roland.dreger@ik.me).
+The license purchased via Adobe Exchange (Stock and Marketplace) is a single user license. The cost of requests to the large language models (LLMs) from *OpenAI*, *Google*, or *Mistral AI* is included in the plugin price. (Fair Use Policy) Inquiries regarding an Enterprise license to [roland.dreger@ik.me](mailto:roland.dreger@ik.me).
 
 The license key is entered in the `Settings` tab of the panel.
 
@@ -22,7 +22,7 @@ If no alternative text is stored, you can insert one using the input field in th
 
 [Preview Alt-text generation on vimeo](https://vimeo.com/1026952093)
 
-A suggestion for an alternate text can be created using the `Generate` button. The generation is based on a Large Language Model (LLM) from OpenAI. Please note that language models can make mistakes. Therefore, check the suggested texts and do not enter any sensitive data in the prompt input field, for example no personal or confidential data.
+A suggestion for an alternate text can be created using the `Generate` button. The generation is based on a Large Language Model (LLM) from *OpenAI*, *Google* or *Mistral AI*. Please note that language models can make mistakes. Therefore, check the suggested texts and do not enter any sensitive data in the prompt input field, for example no personal or confidential data.
 
 An existing text in the ALT text field (top input field in the plugin panel) provides the context for the generation of the (new) ALT text. This is helpful, for example, if a specific region for a landscape photo or the name of a celebrity in a photo is to be included in the description of the content.
 
@@ -46,12 +46,12 @@ For example, when exporting a group of image frames to PDF, the alternative text
 
 You can use the refesh `XMP` button to edit the metadata (XMP) of the linked image file. 
 
-**Entry** (to be changed): *Alt Text* (Accessibility) in the *IPTC Content* section of the XMP metadata.  
-**Value** (to be inserted): the current entry in the `Alternative Text` input field in the plugin panel, *Image* tab.
+**Modified entry**: *Alt Text* (Accessibility) in the *IPTC Content* section of the XMP metadata.  
+**Inserted Value**: The current entry in the `Alternate Text` input field in the plugin panel, *Image* tab.
 
 In the *Alt Text* (Accessibility) entry, entries in multiple languages are possible in addition to the default language (*x-default*). If you want to work with different languages, enable the `Multiple Languages` option in the settings under the *Metadata (XMP)* section. Otherwise, leave this option disabled, and only the default value will be added, modified, or removed.
 
-**Note**: You can also delete the entry from the file’s metadata. To do so, leave the `Alternative Text` input field in the plugin panel blank and click the refesh `XMP` button in the metadata section. If the `Multiple Languages` option is enabled in the settings, the entry for the language of the alternative text will be deleted. If the option is disabled, the entire *Alt Text* (Accessibility) entry will be removed from the file’s metadata.
+**Note**: You can also delete the *Alt Text* (Accessibility) entry from the file’s metadata. To do so, leave the `Alternative Text` input field in the plugin panel blank and click the refesh `XMP` button in the metadata section. If the `Multiple Languages` option is enabled in the settings, the entry for the language of the alternative text will be deleted. If the option is disabled, the entire *Alt Text* (Accessibility) entry will be removed from the file’s metadata.
 
 ### Prompt
 
@@ -131,8 +131,9 @@ In the `Settings` tab, you can enter the license key that you got when you purch
 
 You can choose between two AI providers for the generation of alternative texts:
 
-- **OpenAI** is a US software company based in San Francisco.
-- **Mistral AI** is a French software company based in Paris.
+- **OpenAI** is a U.S. software company based in San Francisco. Use OpenAI for general subjects and concise alternative text.
+- **Google** is a U.S. software company based in California. Google is particularly good at object recognition, even for unusual subjects.
+- **Mistral AI** is a French software company based in Paris. Choose Mistral AI if it’s important to you that your image data are processed in Europe.
 
 The setting you choose will remain in place even after restarting InDesign.
 
@@ -144,19 +145,38 @@ The setting you choose will remain in place even after restarting InDesign.
 If this option is enabled, a drop-down menu appears for selecting the default language. The ALT text for the language selected here is used as the entry for the *x-default* language in the metadata.
 
 ### Automated Actions
-#### Generating custom ALT texts
+#### Generating custom ALT texts for images
 
 The `Generate all` action automatically **assigns an custom alternative text** to all objects with links. Links whose InDesign object is marked as a decorative image or non-text element are skipped. 
 
-A Large Language Model (LLM) from OpenAI or MistralAI is used to create the alternative texts. The images are processed via the OpenAI or MistralAI API interface. The specifications for the generation instruction (prompt), the target language or the context are taken from the settings in the panel. If the prompt input field and the drop-down menu for the language selection are not visible, activate the checkbox `Instruction for ALT text` in the footer of the panel.
+A Large Language Model (LLM) from *OpenAI*, *Google* or *Mistral AI* is used to create the alternative texts. The images are processed using the providers' API. The specifications for the generation instruction (prompt), the target language or the context are taken from the settings in the panel. If the prompt input field and the drop-down menu for the language selection are not visible, activate the checkbox `Instruction for ALT text` in the footer of the panel.
 
 In the `Settings` tab, you can make **additional settings for automated Alt-text generation** in the `Automated actions` section. Here you can specify whether to overwrite existing alternative text, whether to process the active document or all documents, and whether to include images on hidden layers or on the pasteboard.
+
+#### Creating Custom ALT Texts for Mathematical Expressions
+
+The `ALT Texts for MathML` action automatically **creates** **custom alternative texts** for all (InDesign-native) mathematical expressions. Mathematical expressions marked as decorative images or non-text elements are skipped.
+
+The target language is taken from the setting in the panel. If the drop-down menu for language selection is not visible, check the `ALT Text Instruction` checkbox at the bottom of the panel.
+
+In the `Settings` tab, under the `Automated Actions` section, you can configure **additional settings for automated ALT text generation**. Here, you can specify whether to overwrite existing alternative text, whether to process the active document or all documents, and whether to include mathematical expressions on hidden layers or the artboard.
 
 #### Removing custom ALT texts
 
 The `Remove all` action **removes the custom alternate text** for all objects. Entries for actual text remain unchanged. The values for the `Source for Actual Text` option are not altered by this action.
 
 In the `Settings` tab, you can make **additional settings for automatically removing alternative text** in the `Automated actions` section. Here you can specify whether to process the active document or all documents, and whether to include hidden images or images on the pasteboard.
+
+#### Update Metadata for Linked Files
+
+The `Update Metadata` action automatically **updates** the metadata in the files for all objects with links.
+
+**Changed entry**: *Alt Text* (Accessibility) in the *IPTC Content* section of the XMP metadata.
+**Inserted value**: Current entry in the object’s export options. (Source for alternative text: Custom)
+
+In the *Alt Text* (Accessibility) entry, entries in multiple languages are possible in addition to the default language (*x-default*). If you want to work with different languages, enable the `Multiple Languages` option in the settings under the *Metadata (XMP)* section. Otherwise, leave this option disabled, and only the default value will be added or modified.
+
+In the `Settings` tab, under the `Automated Actions` section, you can configure **additional settings for updating metadata**. Here, you can specify whether to overwrite existing metadata, whether to process the active document or all documents, and whether to include hidden images or images on the artboard.
 
 ## Questions and support
 
