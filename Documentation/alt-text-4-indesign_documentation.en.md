@@ -29,10 +29,10 @@ An existing text in the ALT text field (top input field in the plugin panel) pro
 ### Image Navigation
 
 The arrow buttons below the alternative text input field are used to navigate within the active document: 
-`«`   First image in document
-`‹`   Previous image
-`›`   Next image
-`»`   Last image in document
+`«`   First image in document  
+`‹`   Previous image  
+`›`   Next image  
+`»`   Last image in document  
 
 ### Object indicator
 

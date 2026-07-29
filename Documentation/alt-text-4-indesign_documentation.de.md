@@ -16,7 +16,7 @@ Der Lizenzschlüssel wird im Reiter `Einstellungen` des Panels eingegeben.
 
 Alternativer Text, auch ALT-Text genannt, ist ein wesentlicher Bestandteil von barrierefreien Dokumenten. Er dient dazu, nicht-textuelle Inhalte wie Bilder oder Grafiken zu beschreiben und kann von assistiven Technologien, wie Screenreadern, ausgelesen und wiedergegeben werden.
 
-Wird ein Bild im geöffneten InDesign-Dokument ausgewählt, liest das Plugin den alternativen Text aus den Objektexportoptionen aus. (Objekt → Objektexportoptionen ...  → Alternativer Text) Ist ein Text hinterlegt, wird dieser im Tab `Bilder` des Plugin-Panels im obersten Eingabefeld angezeigt. Du kannst den Alternativtext zudem direkt über das Eingabefeld für das ausgewählte Objekt geändert.
+Wird ein Bild im geöffneten InDesign-Dokument ausgewählt, liest das Plugin den alternativen Text aus den Objektexportoptionen aus. (Objekt → Objektexportoptionen ...  → Alternativer Text) Ist ein Text hinterlegt, wird dieser im Tab `Bilder` des Plugin-Panels im obersten Eingabefeld angezeigt. Über dieses Eingabefeld kannst du den Alternativtext für das ausgewählte Objekt auch direkt neu eingeben oder anpassen.
 
 Ist kein alternativer Text hinterlegt, kann ein solcher über das Eingabefeld im Panel eingefügt werden. Dazu die Checkbox `Benutzerdefinierter ALT-Text` anhaken und im Feld den gewünschten Text eingeben. Dieser wird dann als alternativer Text für das ausgewählte Objekt übernommen.
 
@@ -30,10 +30,10 @@ Ein vorhandener Text im ALT-Text-Feld (oberstes Eingabefeld im Plugin-Panel) gib
 
 Die Pfeil-Schaltflächen unter dem Eingabefeld für den alternativen Text dienen zur Navigation innerhalb des aktiven Dokuments:
 
-`«`   Erstes Bild im Dokument
-`‹`   Vorheriges Bild
-`›`   Nächstes Bild
-`»`   Letztes Bild im Dokument
+`«`   Erstes Bild im Dokument  
+`‹`   Vorheriges Bild  
+`›`   Nächstes Bild  
+`»`   Letztes Bild im Dokument  
 
 ### Objekt-Indikator
 
