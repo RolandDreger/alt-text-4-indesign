@@ -10,23 +10,23 @@ Verantwortlich für die Datenverarbeitung im Sinne der Datenschutzgrundverordnun
 
 3. Erhobene und verarbeitete Daten 
 
-Das Plugin erhebt keine persönlichen Nutzerdaten. Lediglich die Anzahl der Operationen (Erstellung der Alternativtexte) sowie das Datum des letzten Zugriffs werden zu Zwecken der Lizenzüberprüfung erfasst. Bilddateien werden in verkleinerter Form an die OpenAI-API übermittelt, um darauf basierend alternative Texte zu generieren.
+Das Plugin erhebt keine persönlichen Nutzerdaten. Lediglich die Anzahl der Operationen (Erstellung der Alternativtexte) sowie das Datum des letzten Zugriffs werden zu Zwecken der Lizenzüberprüfung erfasst. Bilddateien werden in verkleinerter Form an die *OpenAI-*, *Google-* oder *Mistral AI*-API übermittelt, um darauf basierend alternative Texte zu generieren.
 
 4. Zweck der Datenverarbeitung 
 
-Die Erfassung der Zugriffsanzahl und des letzten Zugriffsdatums dient ausschließlich der Prüfung und Verwaltung der Lizenz für das Plugin. Die Übermittlung der verkleinerten Bilddateien an OpenAI erfolgt ausschliesslich, um die automatisierte Erstellung barrierefreier Alternativtexte anbieten zu können.
+Die Erfassung der Zugriffsanzahl und des letzten Zugriffsdatums dient ausschließlich der Prüfung und Verwaltung der Lizenz für das Plugin. Die Übermittlung der verkleinerten Bilddateien an *OpenAI*, *Google* oder *Mistral AI* erfolgt ausschliesslich, um die automatisierte Erstellung barrierefreier Alternativtexte anbieten zu können.
 
 5. Weitergabe an Drittanbieter
 
-Das Plugin setzt zur Erzeugung der Alternativtexte ein Large Language Model von *[OpenAI](https://openai.com/)* oder *[Mistral AI](https://mistral.ai/)* ein. (Auswahl des Models in den Einstellungen des Plugins.) Dabei werden ausschließlich verkleinerte (skalierte, komprimierte) Bilddaten und keine weiteren Nutzerdaten an *OpenAI* oder *Mistral AI* übermittelt. *OpenAI* und *Mistral AI* verarbeitet diese Daten im Auftrag. Eine darüber hinausgehende Offenlegung oder Weitergabe Ihrer Daten erfolgt nicht.
+Das Plugin setzt zur Erzeugung der Alternativtexte ein Large Language Model von *[OpenAI](https://openai.com/)*, *[Google](https://www.google.com/)* oder *[Mistral AI](https://mistral.ai/)* ein. (Die Auswahl des Models erfolgt in den Einstellungen des Plugins.) Dabei werden ausschließlich verkleinerte (skalierte, komprimierte) Bilddaten und keine weiteren Nutzerdaten an *OpenAI*, *Google* oder *Mistral AI* übermittelt. *OpenAI*, *Google* und *Mistral AI* verarbeitet diese Daten im Auftrag. Eine darüber hinausgehende Offenlegung oder Weitergabe Ihrer Daten erfolgt nicht.
 
 6. Datensicherheit
 
-Es werden technische und organisatorische Maßnahmen getroffen, um Ihre Daten vor unbefugtem Zugriff, Verlust oder Manipulation zu schützen. Die Übertragung Ihrer Bilddaten an OpenAI erfolgt verschlüsselt über eine gesicherte API-Verbindung.
+Es werden technische und organisatorische Maßnahmen getroffen, um Ihre Daten vor unbefugtem Zugriff, Verlust oder Manipulation zu schützen. Die Übertragung Ihrer Bilddaten an *OpenAI*, *Google* oder *Mistral AI* erfolgt verschlüsselt über eine gesicherte API-Verbindung.
 
 7. Speicherdauer
 
-Die gespeicherten Lizenzprüfungsdaten (Zugriffsanzahl und letztes Zugriffsdatum) werden über die gesamte Nutzungsdauer des Plugins aufbewahrt und nach Ablauf der Lizenzfrist gelöscht. Die an *OpenAI* oder *Mistral AI* übermittelten Bilddateien werden lokal und temporär in skaliertem Format auf Ihrem Rechner gespeichert und nach dem Schließen von InDesign automatisch gelöscht. *[OpenAI](https://openai.com/)* und *[Mistral AI](https://mistral.ai/)* speichern Daten gemäß den eigenen Nutzungs- und Datenschutzbestimmungen.
+Die gespeicherten Lizenzprüfungsdaten (Zugriffsanzahl und letztes Zugriffsdatum) werden über die gesamte Nutzungsdauer des Plugins aufbewahrt und nach Ablauf der Lizenzfrist gelöscht. Die an *OpenAI*, *Google* oder *Mistral AI* übermittelten Bilddateien werden lokal und temporär in skaliertem Format auf Ihrem Rechner gespeichert und nach dem Schließen von InDesign automatisch gelöscht. *[OpenAI](https://openai.com/)*, *[Google](https://www.google.com/)* und *[Mistral AI](https://mistral.ai/)* speichern Daten gemäß den eigenen Nutzungs- und Datenschutzbestimmungen.
 
 8. Ihre Rechte
 

@@ -10,23 +10,23 @@ Roland Dreger, Tempelgasse 5, 1020 Vienna, Austria, email: roland.dreger@ik.me i
 
 3. Data collected and processed
 
-The plugin does not collect any personal user data. Only the number of operations (creation of alternative texts) and the date of the last access are recorded for license verification purposes. Image files are transmitted to the OpenAI API in reduced form in order to generate alternative texts based on them.
+The plugin does not collect any personal user data. Only the number of operations (creation of alternative texts) and the date of the last access are recorded for license verification purposes. Image files are transmitted to the *OpenAI-*, *Google-* or *Mistral AI*-API in reduced form in order to generate alternative texts based on them.
 
 4. Purpose of data processing
 
-The recording of the number of accesses and the last access date serves exclusively to check and manage the license for the plugin. The transmission of the reduced image files to OpenAI takes place exclusively in order to be able to offer the automated creation of accessible alternative texts.
+The recording of the number of accesses and the last access date serves exclusively to check and manage the license for the plugin. The transmission of the reduced image files to *OpenAI*, *Google* or *Mistral AI* takes place exclusively in order to be able to offer the automated creation of accessible alternative texts.
 
 5. Transfer to third-party providers
 
-The plugin uses a Large Language Model from *[OpenAI](https://openai.com/)* or *[Mistral AI](https://mistral.ai/)* to generate the alternative texts. (Selection of the model in the plugin settings.) Only reduced (scaled, compressed) image data and no other user data is transmitted to *OpenAI* or *Mistral AI*. *OpenAI* and *Mistral AI* processes this data on behalf of the user. Your data will not be disclosed or passed on beyond this.
+The plugin uses a Large Language Model from *[OpenAI](https://openai.com/)*, *[Google](https://www.google.com/)* or *[Mistral AI](https://mistral.ai/)* to generate the alternative texts. (Model selection is done in the plugin's settings.) Only reduced (scaled, compressed) image data and no other user data is transmitted to *OpenAI*, *Google* or *Mistral AI*. *OpenAI*, *Google* and *Mistral AI* processes this data on behalf of the user. Your data will not be disclosed or passed on beyond this.
 
 6. Data security
 
-Technical and organizational measures are taken to protect your data from unauthorized access, loss or manipulation. Your image data is transmitted to *OpenAI* in encrypted form via a secure API connection.
+Technical and organizational measures are taken to protect your data from unauthorized access, loss or manipulation. Your image data is transmitted to *OpenAI*, *Google* or *Mistral AI* in encrypted form via a secure API connection.
 
 7. Storage duration
 
-The stored license verification data (number of accesses and last access date) is stored for the entire service life of the plugin and deleted after the license period has expired. The image files transmitted to *OpenAI* are stored locally and temporarily in scaled format on your computer and are automatically deleted after InDesign is closed. *[OpenAI](https://openai.com/)* and *[Mistral AI](https://mistral.ai/)* stores data in accordance with its own terms of use and privacy policy.
+The stored license verification data (number of accesses and last access date) is stored for the entire service life of the plugin and deleted after the license period has expired. The image files transmitted to *OpenAI*, *Google* or *Mistral AI* are stored locally and temporarily in scaled format on your computer and are automatically deleted after InDesign is closed. *[OpenAI](https://openai.com/)*, *[Google](https://www.google.com/)* and *[Mistral AI](https://mistral.ai/)* stores data in accordance with its own terms of use and privacy policy.
 
 8. Your rights
 
