@@ -60,7 +60,7 @@ Für die automatisierte Erstellung des alternativen Textes ist eine Anweisung (P
 
 **Hinweis:** Die Eingabe wirkt sich auch auf die automatisierte Erstellung der alternativen Texte aus für alle verlinkten Bilder.
 
-### Auswahl
+#### Auswahl
 
 Über ein Menü können vorinstallierte (in eckigen Klammern) und eigene Prompts ausgewählt werden. 
 
@@ -68,7 +68,7 @@ Um einen eigenen Prompt zu speichern, gib deinen Text im Prompt-Eingabefeld ein.
 
 **Hinweis**: Bitte bewahre ein Backup deiner eigenen Prompts auf, damit du sie gegebenenfalls wiederherstellen kannst. Die dauerhafte Speicherung im Plugin kann nicht unter allen Umständen gewährleistet werden, z.B. bei einer Neuinstallation von InDesign oder des Plugins. 
 
-### Sprache
+#### Sprache
 
 Es kann vorkommen, dass die Sprache deiner InDesign-Benutzeroberfläche, nicht mit der Dokument-Sprache übereinstimmt, also der Sprache, in der die Alternativtexte erstellt werden sollen. In diesem Fall kannst du eine bestimmte Sprache vorgeben. Wähle dazu mittels Dropdown-Menü rechts über dem Prompt-Eingabefeld die gewünschte Zielsprache aus. Zur Verfügung stehen: Afrikaans, Katalanisch, Dänisch, Deutsch, Englisch, Spanisch, Französisch, Hindi, Italienisch, Koreanisch und Schwedisch.
 

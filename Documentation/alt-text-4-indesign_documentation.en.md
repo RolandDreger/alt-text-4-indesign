@@ -60,7 +60,7 @@ An instruction (prompt) for the LLM is predefined for the automated generation o
 
 **Note:** The input also affects the automatic generation of alternative texts for all linked images.
 
-### Selection
+#### Selection
 
 Using the menu above the prompt input field, you can select pre-installed prompts (in square brackets) and your own prompts. 
 
@@ -68,7 +68,7 @@ To save your own prompt, enter your text in the prompt input field. Click on the
 
 **Note**: Please keep a backup of your own prompts so that you can restore them if necessary. Permanent storage in the plugin cannot be guaranteed under all circumstances, e.g., if InDesign or the plugin is reinstalled.
 
-### Language
+#### Language
 
 It may happen that the language of your InDesign user interface does not match the document language, i.e. the language in which the alternate texts are to be generated. In this case, you can specify a specific language. To do this, select the desired target language from the drop-down menu on the right above the prompt input field. The following are available: Afrikaans, Catalan, Danish, German, English, Spanish, French, Hindi, Italian, Korean and Swedish.
 
