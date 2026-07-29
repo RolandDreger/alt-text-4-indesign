@@ -47,12 +47,12 @@ For example, when exporting a group of image frames to PDF, the alternative text
 
 You can use the refesh `XMP` button to edit the metadata (XMP) of the linked image file. 
 
-**Modified entry**: *Alt Text* (Accessibility) in the *IPTC Content* section of the XMP metadata.  
+**Modified entry**: *Alt Text (Accessibility)* in the *IPTC Content* section of the XMP metadata.  
 **Inserted Value**: The current entry in the `Alternate Text` input field in the plugin panel, *Image* tab.
 
-In the *Alt Text* (Accessibility) entry, entries in multiple languages are possible in addition to the default language (*x-default*). If you want to work with different languages, enable the `Multiple Languages` option in the settings under the *Metadata (XMP)* section. Otherwise, leave this option disabled, and only the default value will be added, modified, or removed.
+In the *Alt Text (Accessibility)* entry, entries in multiple languages are possible in addition to the default language (*x-default*). If you want to work with different languages, enable the `Multiple Languages` option in the settings under the *Metadata (XMP)* section. Otherwise, leave this option disabled, and only the default value will be added, modified, or removed.
 
-**Note**: You can also delete the *Alt Text* (Accessibility) entry from the file’s metadata. To do so, leave the `Alternative Text` input field in the plugin panel blank and click the refesh `XMP` button in the metadata section. If the `Multiple Languages` option is enabled in the settings, the entry for the language of the alternative text will be deleted. If the option is disabled, the entire *Alt Text* (Accessibility) entry will be removed from the file’s metadata.
+**Note**: You can also delete the *Alt Text (Accessibility)* entry from the file’s metadata. To do so, leave the `Alternative Text` input field in the plugin panel blank and click the refesh `XMP` button in the metadata section. If the `Multiple Languages` option is enabled in the settings, the entry for the language of the alternative text will be deleted. If the option is disabled, the entire *Alt Text (Accessibility)* entry will be removed from the file’s metadata.
 
 ### Prompt
 
@@ -172,10 +172,10 @@ In the `Settings` tab, you can make **additional settings for automatically remo
 
 The `Update Metadata` action automatically **updates** the metadata in the files for all objects with links.
 
-**Changed entry**: *Alt Text* (Accessibility) in the *IPTC Content* section of the XMP metadata.
+**Changed entry**: *Alt Text (Accessibility)* in the *IPTC Content* section of the XMP metadata.
 **Inserted value**: Current entry in the object’s export options. (Source for alternative text: Custom)
 
-In the *Alt Text* (Accessibility) entry, entries in multiple languages are possible in addition to the default language (*x-default*). If you want to work with different languages, enable the `Multiple Languages` option in the settings under the *Metadata (XMP)* section. Otherwise, leave this option disabled, and only the default value will be added or modified.
+In the *Alt Text (Accessibility)* entry, entries in multiple languages are possible in addition to the default language (*x-default*). If you want to work with different languages, enable the `Multiple Languages` option in the settings under the *Metadata (XMP)* section. Otherwise, leave this option disabled, and only the default value will be added or modified.
 
 In the `Settings` tab, under the `Automated Actions` section, you can configure **additional settings for updating metadata**. Here, you can specify whether to overwrite existing metadata, whether to process the active document or all documents, and whether to include hidden images or images on the artboard.
 

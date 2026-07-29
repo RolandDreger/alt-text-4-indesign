@@ -47,12 +47,12 @@ Etwa wird bei einer Gruppe mit Bildrahmen beim PDF-Export der alternative Text d
 
 Über den Button `XMP`-Aktualisieren kannst du die Metadaten der verknüpften Bilddatei editieren. 
 
-**Geänderter Eintrag**: *Alt Text* (Barrierefreiheit) im Abschnitt *IPTC-Inhalt* der XMP-Metadaten.  
+**Geänderter Eintrag**: *Alt Text (Barrierefreiheit)* im Abschnitt *IPTC-Inhalt* der XMP-Metadaten.  
 **Eingefügter Wert**: Aktueller Eintrag im Eingabefeld `Alternativer Text` im Plugin-Panel, Tab *Bild*.
 
-Im Eintrag *Alt Text* (Barrierefreiheit) sind neben der Standard-Sprache (*x-default*) auch Einträge in weiteren Sprachen möglich. Wenn du mit unterschiedlichen Sprachen arbeiten möchtest, aktiviere dafür die Option `Mehrere Sprachen` in den Einstellungen im Abschnitt *Metadaten (XMP)*. Wenn nicht, lass diese Option deaktiviert und es wird immer nur der Standard-Wert hinzugefügt, geändert oder entfernt.
+Im Eintrag *Alt Text (Barrierefreiheit)* sind neben der Standard-Sprache (*x-default*) auch Einträge in weiteren Sprachen möglich. Wenn du mit unterschiedlichen Sprachen arbeiten möchtest, aktiviere dafür die Option `Mehrere Sprachen` in den Einstellungen im Abschnitt *Metadaten (XMP)*. Wenn nicht, lass diese Option deaktiviert und es wird immer nur der Standard-Wert hinzugefügt, geändert oder entfernt.
 
-**Hinweis**: Der Eintrag *Alt Text* (Barrierefreiheit) kann auch vollständig aus den Metadaten der Datei gelöscht werden. Lass dafür das Eingabefeld `Alternativer Text` im Plugin-Panel leer und klick auf den Button `XMP`-Aktualisieren. Wenn in den Einstellungen die Option `Mehrere Sprachen` aktiviert ist, wird der Eintrag der jeweiligen Sprache des alternativen Textes gelöscht. Ist diese Option deaktiviert, wird der gesamte Eintrag *Alt Text* (Barrierefreiheit) aus den Metadaten der Datei entfernt.
+**Hinweis**: Der Eintrag *Alt Text (Barrierefreiheit)* kann auch vollständig aus den Metadaten der Datei gelöscht werden. Lass dafür das Eingabefeld `Alternativer Text` im Plugin-Panel leer und klick auf den Button `XMP`-Aktualisieren. Wenn in den Einstellungen die Option `Mehrere Sprachen` aktiviert ist, wird der Eintrag der jeweiligen Sprache des alternativen Textes gelöscht. Ist diese Option deaktiviert, wird der gesamte Eintrag *Alt Text (Barrierefreiheit)* aus den Metadaten der Datei entfernt.
 
 ### Prompt
 
@@ -174,10 +174,10 @@ Im Reiter `Settings` können im Abschnitt `Automatisierte Aktionen` **zusätzlic
 
 Die Aktion `Metadaten aktualisieren` **aktualisiert** automatisiert die Metadaten in den Dateien für alle Objekte mit Verknüpfungen. 
 
-**Geänderter Eintrag**: *Alt Text* (Barrierefreiheit) im Abschnitt *IPTC-Inhalt* der XMP-Metadaten.  
+**Geänderter Eintrag**: *Alt Text (Barrierefreiheit)* im Abschnitt *IPTC-Inhalt* der XMP-Metadaten.  
 **Eingefügter Wert**: Aktueller Eintrag in den Objektexportoptionen des Objekts. (Quelle für alternativen Text: Benutzerdefiniert)
 
-Im Eintrag *Alt Text* (Barrierefreiheit) sind neben der Standard-Sprache (*x-default*) auch Einträge in weiteren Sprachen möglich. Wenn du mit unterschiedlichen Sprachen arbeiten möchtest, aktiviere dafür die Option `Mehrere Sprachen` in den Einstellungen im Abschnitt *Metadaten (XMP)*. Wenn nicht, lass diese Option deaktiviert und es wird immer nur der Standard-Wert hinzugefügt oder geändert.
+Im Eintrag *Alt Text (Barrierefreiheit)* sind neben der Standard-Sprache (*x-default*) auch Einträge in weiteren Sprachen möglich. Wenn du mit unterschiedlichen Sprachen arbeiten möchtest, aktiviere dafür die Option `Mehrere Sprachen` in den Einstellungen im Abschnitt *Metadaten (XMP)*. Wenn nicht, lass diese Option deaktiviert und es wird immer nur der Standard-Wert hinzugefügt oder geändert.
 
 Im Reiter `Settings` können im Abschnitt `Automatisierte Aktionen` **zusätzliche Einstellungen für die Aktualisierung der Metadaten** getroffen werden. Hier kannst du festlegen, ob vorhandene Metadaten überschrieben, ob das aktive Dokument oder alle Dokumente verarbeitet, ob ausgeblendete Bilder oder Bilder auf der Montagefläche miteinbezogen werden sollen.
 
