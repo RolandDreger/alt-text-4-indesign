@@ -137,7 +137,7 @@ Im Reiter `Settings` können im Abschnitt `Automatisierte Aktionen` **zusätzlic
 
 #### Benutzerdefinierte ALT-Texte entfernen
 
-Die Aktion `Alle entfernen` **entfernt den benutzerdefinierten alternative Text** für alle Objekte. Die Einträge für tatsächlichen Text bleiben unverändert erhalten. Die Werte für die Option `Quelle für alternativen Text` wird durch dies Aktion nicht geändert.
+Die Aktion `ALT-Texte entfernen` **entfernt den benutzerdefinierten alternative Text** für alle Objekte. Die Einträge für tatsächlichen Text bleiben unverändert erhalten. Die Werte für die Option `Quelle für alternativen Text` wird durch dies Aktion nicht geändert.
 
 Im Reiter `Settings` können im Abschnitt `Automatisierte Aktionen` **zusätzliche Einstellungen für die Entfernung der ALT-Texte** getroffen werden. Hier kannst du festlegen, ob das aktive Dokument oder alle Dokumente verarbeitet, ob ausgeblendete Bilder oder Bilder auf der Montagefläche miteinbezogen werden sollen.
 
@@ -180,6 +180,19 @@ Die getroffene Einstellung bleibt auch nach dem Neu-Start von InDesign erhalten.
 **Mehrere Sprachen**: Mit dieser Option kannst du auswählen, ob der ALT Text in den Metadaten der Bild-Datei nur für den Standard-Wert *(x-default)* oder mehrere Sprachen (en, de, fr, ...) eingefügt werden soll. Diese Einstellung gilt auch für den Löschvorgang, wenn das Eingabefeld für den alternativen Text im Tab *Bild* leer ist.
 
 Ist die Option aktiviert, erscheint ein Dropdownmenü zur Auswahl der Standardsprache. Der ALT-Text der hier ausgewählten Sprache wird als Eintrag für die Sprache *x-default* in den Metadaten verwendet.
+
+### Automatisierte Aktionen
+#### ALT-Texte für Bilder und MathML
+
+Einstellungen für die automatisierte ALT-Text-Erstellung für Bilder und mathematische Ausdrücke: Hier kannst du festlegen, ob vorhandene alternative Texte überschrieben, ob das aktive Dokument oder alle Dokumente verarbeitet oder ob Objekte auf ausgeblendeten Ebenen oder der Montagefläche miteinbezogen werden sollen.
+
+#### ALT-Texte entfernen
+
+Einstellungen für die Entfernung der benutzerdefinierten ALT-Texte: Hier kannst du festlegen, ob das aktive Dokument oder alle Dokumente verarbeitet, ob ausgeblendete Bilder oder Bilder auf der Montagefläche miteinbezogen werden sollen.
+
+#### Metadaten aktualisieren
+
+Einstellungen für die Aktualisierung von Metadaten in den verknüpften Dateien: Hier kannst du festlegen, ob vorhandene Metadaten überschrieben, ob das aktive Dokument oder alle Dokumente verarbeitet, ob ausgeblendete Bilder oder Bilder auf der Montagefläche miteinbezogen werden sollen.
 
 ## Fragen und Support
 

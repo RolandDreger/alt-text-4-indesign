@@ -135,7 +135,7 @@ In the `Settings` tab, under the `Automated Actions` section, you can configure 
 
 #### Removing custom ALT texts
 
-The `Remove all` action **removes the custom alternate text** for all objects. Entries for actual text remain unchanged. The values for the `Source for Actual Text` option are not altered by this action.
+The `Remove ALT texts` action **removes the custom alternate text** for all objects. Entries for actual text remain unchanged. The values for the `Source for Actual Text` option are not altered by this action.
 
 In the `Settings` tab, you can make **additional settings for automatically removing alternative text** in the `Automated actions` section. Here you can specify whether to process the active document or all documents, and whether to include hidden images or images on the pasteboard.
 
@@ -179,6 +179,19 @@ The setting you choose will remain in place even after restarting InDesign.
 **Multiple Languages**: With this option, you can choose whether the ALT text should be inserted into the image file's metadata (XMP) only for the default value (x-default) or for multiple languages (en, de, fr, ...). This setting also applies to the deletion process if the input field for the alternative text in the *Image* tab is empty.
 
 If this option is enabled, a drop-down menu appears for selecting the default language. The ALT text for the language selected here is used as the entry for the *x-default* language in the metadata.
+
+### Automated Actions
+#### ALT Text for Images and MathML
+
+Settings for automated ALT text generation for images and mathematical expressions: Here you can specify whether to overwrite existing alternative text, whether to process the active document or all documents, and whether to include objects on hidden layers or the artboard.
+
+#### Remove ALT Texts
+
+Settings for removing user-defined ALT texts: Here you can specify whether to process the active document or all documents, and whether to include hidden images or images on the artboard.
+
+#### Update Metadata
+
+Settings for updating metadata in linked files: Here you can specify whether existing metadata should be overwritten, whether the active document or all documents should be processed, and whether hidden images or images on the storyboard should be included.
 
 ## Questions and support
 
