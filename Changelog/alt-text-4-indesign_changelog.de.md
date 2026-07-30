@@ -1,5 +1,19 @@
 # Änderungsprotokoll
 
+**Veröffentlichungsdatum:** demnächst
+
+### Neuer Anbieter
+
+Google wurde als neuer Anbieter für die Generierung der ALT-Texte hinzugefügt. Das verwendete Modell ist besonders gut bei der Objekterkennung, selbst bei nicht alltäglichen Motiven.
+
+### Datei-Metadaten aktualisieren
+
+Neben der Anzeige von Metadaten (XMP) ist es nun auch möglich, diese in den verknüpften Dateien zu aktualisieren. Der Wert für „Alt-Text (Barrierefreiheit)“ kann sowohl als Standardwert als auch in mehreren Sprachen gesetzt werden.
+
+### Neue automatisierte Aktionen
+
+Es gibt nun zwei neue automatisierte Aktionen: „Alt-Texte für MathML“ und „Metadaten aktualisieren“.
+
 ## Version 2.2.4
 
 **Veröffentlichungsdatum:** 1. Juni 2026

@@ -1,5 +1,21 @@
 # Changelog
 
+## Version 2.3.0
+
+**Release date:** soon
+
+### New Provider
+
+Added Google as a new provider for generating ALT text. The model used is particularly good at object recognition, even with less common subjects.
+
+### Update File Metadata
+
+In addition to displaying metadata (XMP), it is now also possible to update it in the linked files. The value for “Alt Text (Accessibility)” can be set both as a default value and in various languages.
+
+### New Automated Actions
+
+There are now two new automated actions: “Alt Texts for MathML” and “Update Metadata”.
+
 ## Version 2.2.4
 
 **Release date:** Jun 1, 2026
