@@ -1,8 +1,8 @@
 # Changelog
 
-## Version 2.3.0
+## Version 2.3.1
 
-**Release date:** soon
+**Release date:** Aug 20, 2026
 
 ### New Provider
 

@@ -1,6 +1,8 @@
 # Änderungsprotokoll
 
-**Veröffentlichungsdatum:** demnächst
+## Version 2.3.1
+
+**Veröffentlichungsdatum:** 20.8.2026
 
 ### Neuer Anbieter
 
@@ -8,7 +10,7 @@ Google wurde als neuer Anbieter für die Generierung der ALT-Texte hinzugefügt.
 
 ### Datei-Metadaten aktualisieren
 
-Neben der Anzeige von Metadaten (XMP) ist es nun auch möglich, diese in den verknüpften Dateien zu aktualisieren. Der Wert für „Alt-Text (Barrierefreiheit)“ kann sowohl als Standardwert als auch in mehreren Sprachen gesetzt werden.
+Neben der Anzeige von Metadaten (XMP) ist es jetzt auch möglich, diese in den verknüpften Dateien zu aktualisieren. Der Wert für „Alt-Text (Barrierefreiheit)“ kann sowohl als Standardwert als auch in mehreren Sprachen gesetzt werden.
 
 ### Neue automatisierte Aktionen
 
